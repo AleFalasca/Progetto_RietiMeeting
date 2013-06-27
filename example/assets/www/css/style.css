@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* STANDARD FOR MOBILE */
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;
+                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-attachment: fixed;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #efefef;
+}
+
+/* END STANDARD MOBILE */
+
+/* START STRUCTURE */
+
+#mainContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    left: 0%;
+}
+
+#content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#contents {
+    /* */
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#titlebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 44px;
+    width: 100%;
+    background: #ff4332; /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4332), color-stop(50%,#f96f34), color-stop(100%,#ff4332)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ff4332 0%,#f96f34 50%,#ff4332 100%); /* Chrome10+,Safari5.1+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4332', endColorstr='#ff4332',GradientType=0 ); /* IE6-9 */
+    text-align: center;
+    }
+
+#title {
+    font-family:Arial, Helvetica, sans-serif;
+    color:#FFF;
+    text-align:center;
+    font-size:1.0em;
+    font-weight:bold;
+    position:relative;
+    vertical-align: middle;
+    margin-top: 12px;
+   /* line-height: 40px;*/
+}
+
+#omino {
+    position:absolute;
+    left: 0;
+    top: 0;
+    margin: 5px;
+    width: 5%;
+    height: 80%;
+}
+.navigationItem {
+    border-bottom: 1px solid #d9e2eb;
+    background: #090909;
+    display: block;
+    color: white;
+    padding: 15px 0px;
+    padding-left: 10px;
+}
+
+/* END STRUCTURE */
+#contents ul li {
+    display: inline-block;
+    padding-top: 50px;
+    width: 30%;
+}
+#back {
+    background-color: red;
+    padding: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+#figureContainer {
+    text-align: center;
+    width: 30%;
+    height: 30%;
+}
+#preview {
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 90%
+}
+#listItem {
+    display: inline-block;
+    margin-left: 5px;
+    text-align: center;
+}
+#titleItem {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #4e4e4e;
+    text-align: center;
+}
+#hour {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #4e4e4e;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#listContainer {
+    position: absolute;
+    display: inline-block;
+}
+#figure{
+    margin: auto;
+    border-radius: 10px;
+    width: 50%
+}
+#navbar{
+    background: #ff4332; /* Old browsers */
+    background: -moz-linear-gradient(top, #ff4332 0%, #f96f34 50%, #ff4332 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4332), color-stop(50%,#f96f34), color-stop(100%,#ff4332)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ff4332 0%,#f96f34 50%,#ff4332 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ff4332 0%,#f96f34 50%,#ff4332 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ff4332 0%,#f96f34 50%,#ff4332 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ff4332 0%,#f96f34 50%,#ff4332 100%); /* W3C */
+    position: absolute;
+    bottom: 0;
+    height: 44px;
+    width: 100%;
+    overflow: hidden;
+}
+.link {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 15%;
+    height: 99%;
+    border-right: 1px #CC3300;
+    text-align: center;
+    margin-left: 3%;
+}
+.navItem {
+      width: 80%;
+      height: 80%;
+}
