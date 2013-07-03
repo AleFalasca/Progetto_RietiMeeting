@@ -3,8 +3,8 @@ define(["jquery", "underscore", "parse", "handlebars",  "text!templates/news.htm
 
         var NewsView = Parse.View.extend({
 
-            tagName: "ul",
-            id: "list",
+            tagName: "div",
+            id: "newsView",
 
             template: Handlebars.compile(template)
         });

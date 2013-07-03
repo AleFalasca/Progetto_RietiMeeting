@@ -156,6 +156,25 @@ body {
     width: 100%;
     overflow: hidden;
 }
+#creditsView{
+    color: #030354;
+    text-overflow: clip;
+    text-align: center;
+    margin-top: 44px;
+}
+#photofinish {
+    width: 44px;
+    position: absolute;
+}
+#photofinish img {
+    width: 100%;
+    vertical-align: 50%;
+    margin-top: 50px;
+    padding-left: 150px;
+}
+#peppe {
+    margin-top: 50px;
+}
 .link {
     display: inline-block;
     margin-top: 5px;

@@ -4,11 +4,10 @@ define(["jquery", "underscore", "parse"],
       defaults: {
         title: undefined,
         figure: new Image(),
-        hour: undefined
+        hour: undefined,
+        day: undefined
+
       }
-
       });
-
     return Ad;
-
   });

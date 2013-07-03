@@ -1,15 +1,17 @@
-define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad", "views/AdView", "views/AdListView", "views/NewsView","views/CategoriesView", "views/StructureView"],
-    function ($, _, Parse, AdCollection, Ad, AdView, AdListView, NewsView,CategoriesView, StructureView) {
+define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad", "views/AdView", "views/AdListView", "views/NewsView","views/CategoriesView","views/CreditsView" ,"views/StructureView", "views/PhotofinishView"],
+    function ($, _, Parse, AdCollection, Ad, AdView, AdListView, NewsView,CategoriesView, CreditsView,StructureView, PhotofinishView) {
 
     var AppRouter = Parse.Router.extend({
 
       routes: {
        "": "structure",
-        "list": "list",
-        "news": "news",
-        "calendar": "list",
-        "ads/:id": "adDetails",
-         "categories": "categories"
+       "list": "list",
+       "news": "news",
+       "calendar": "list",
+       "ads/:id": "adDetails",
+       "categories": "categories",
+       "photofinish": "photofinish",
+       "credits": "credits"
       },
 
       initialize: function () {
@@ -19,24 +21,28 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
               hour:"15:30",
               figure: "res/sports/hammer throw women.png",
               day: "Saturday"
+
           });
           var ad2 = new Ad({
               title: "Hammer Throw men - Qualification",
               hour: "17:00",
               figure:"res/sports/hammer throw men.png",
               day: "Saturday"
+
           });
           var ad3 = new Ad({
-              title: "Hammer Throw Pig",
+              title: "100 m Pig",
               hour: "28:00",
-              figure:"res/sports/hammer throw men.png",
-              day: "Saturday"
+              figure:"res/sports/100 m man.png",
+              day: "Sunday"
+
           });
           var ad4 = new Ad({
               title: "Hammer Throw Cow - Qualification",
               hour: "17:00",
               figure:"res/sports/hammer throw men.png",
               day: "Saturday"
+
           });
 
         this.ads = new AdCollection([ad1, ad2, ad3, ad4]);
@@ -58,9 +64,6 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
         });
         this.changePage(page);
       },
-
-     
-
       adDetails: function (id) {
         var ad = this.ads.getByCid(id);
         this.changePage(new AdView({
@@ -68,15 +71,28 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
         }));
       },
  categories: function () {
-          var page = new CategoriesView ({
-          })
-          this.changePage(page)
-      },
+     var page = new CategoriesView({
+         model: this.ads
+     });
+     this.changePage(page);
+ },
        news: function () {
           var page = new NewsView ({
           })
+           console.log("newsview"),
           this.changePage(page)
       },
+        credits: function () {
+            var page = new CreditsView({
+                model: this.cred
+            });
+            this.changePage(page);
+        },
+        photofinish: function (){
+         var page = new PhotofinishView({
+         });
+         this.changePage(page);
+        },
        changePage: function (page) {
         if(this.currentView) {
            this.currentView.remove();
@@ -87,7 +103,6 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
         this.contents.append($(page.el));
         this.currentView.trigger("inTheDom");
       }
-
     });
 
     return AppRouter;

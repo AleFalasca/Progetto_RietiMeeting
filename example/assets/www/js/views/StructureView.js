@@ -8,7 +8,8 @@ define(["jquery", "underscore", "parse", "handlebars", "leaflet", "text!template
         events: {
           "touchend #calendar": "goCalendar",
           "touchend #news": "goNews",
-          "touchend #categories": "goCategories"
+          "touchend #categories": "goCategories",
+          "touchend #credits": "goCredits"
         },
 
         goNews: function () {
@@ -25,9 +26,6 @@ define(["jquery", "underscore", "parse", "handlebars", "leaflet", "text!template
           this.title = "IAAF World Challenge - Rieti 2012 - Meeting #42";
           $(this.el).html(this.template({"title": this.title}));
           $('body').append($(this.el));
-          if(!this.otherButton) {
-            this.otherButton = document.getElementById("otherButton");
-          }
           return this;
         },
 
@@ -36,9 +34,11 @@ define(["jquery", "underscore", "parse", "handlebars", "leaflet", "text!template
         },
         goCategories: function () {
             Parse.history.navigate("categories", {trigger: true});
+        },
+        goCredits: function (){
+            Parse.history.navigate("credits", {trigger: true});
         }
       });
-
     return StructureView;
 
   }); 
