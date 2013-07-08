@@ -11,11 +11,13 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
        "ads/:id": "adDetails",
        "categories": "categories",
        "photofinish": "photofinish",
-       "credits": "credits"
+       "credits": "credits",
+       "feedDetails": "feedDetails"
       },
 
       initialize: function () {
         this.currentView = undefined;
+        
          var ad1 = new Ad({
               title: "Hammer Throw women - Qualification",
               hour:"15:30",
@@ -42,10 +44,92 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
               hour: "17:00",
               figure:"res/sports/hammer throw men.png",
               day: "Saturday"
-
           });
-
-        this.ads = new AdCollection([ad1, ad2, ad3, ad4]);
+          var ad5 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad6 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad7 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad8 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad9 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad10 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad11 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad12 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad13 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad14 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad15 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad16 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad17 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+          var ad18 = new Ad({
+              title: "Hammer Throw Cow - Qualification",
+              hour: "17:00",
+              figure:"res/sports/hammer throw men.png",
+              day: "Saturday"
+          });
+        this.ads = new AdCollection([ad1, ad2, ad3, ad4, ad5, ad6, ad7, ad8, ad9, ad10, ad11, ad12, ad13, ad14, ad15, ad16, ad17, ad18]);
         this.ads.query = new Parse.Query(Ad);
       },
 
@@ -79,12 +163,10 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
        news: function () {
           var page = new NewsView ({
           })
-           console.log("newsview"),
           this.changePage(page)
       },
         credits: function () {
             var page = new CreditsView({
-                model: this.cred
             });
             this.changePage(page);
         },

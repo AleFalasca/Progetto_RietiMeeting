@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "parse", "handlebars", "leaflet", "text!templates/structure.html"],
-    function ($, _, Parse, Handlebars, L, template) {
+define(["jquery", "underscore", "parse", "handlebars", "text!templates/structure.html"],
+    function ($, _, Parse, Handlebars, template) {
 
     var StructureView = Parse.View.extend({
 
@@ -22,13 +22,13 @@ define(["jquery", "underscore", "parse", "handlebars", "leaflet", "text!template
 
         template: Handlebars.compile(template),
 
+
         render: function () {
           this.title = "IAAF World Challenge - Rieti 2012 - Meeting #42";
           $(this.el).html(this.template({"title": this.title}));
           $('body').append($(this.el));
           return this;
         },
-
         goCalendar: function () {
             Parse.history.navigate("calendar", {trigger: true});
         },

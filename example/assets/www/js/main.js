@@ -32,7 +32,6 @@ require.config({
 // We launch the App
 require(['underscore', 'parse', 'router'],
     function (_, Parse, AppRouter) {
-
       document.addEventListener("deviceready", run, false);
       function run() {
         Parse.initialize("WcxDz5mVqJzgHVYM3655WJoVDTphUpAcrhOAzS9C", "26MoNXeBtKABSPAaFAGpGpqRbPZUtodLbvqoxXwF");

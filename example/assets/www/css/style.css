@@ -50,7 +50,7 @@ body {
 }
 
 #titlebar {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     height: 44px;
@@ -143,6 +143,7 @@ body {
     width: 50%
 }
 #navbar{
+    position: fixed;
     background: #ff4332; /* Old browsers */
     background: -moz-linear-gradient(top, #ff4332 0%, #f96f34 50%, #ff4332 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4332), color-stop(50%,#f96f34), color-stop(100%,#ff4332)); /* Chrome,Safari4+ */
@@ -150,7 +151,6 @@ body {
     background: -o-linear-gradient(top, #ff4332 0%,#f96f34 50%,#ff4332 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #ff4332 0%,#f96f34 50%,#ff4332 100%); /* IE10+ */
     background: linear-gradient(to bottom, #ff4332 0%,#f96f34 50%,#ff4332 100%); /* W3C */
-    position: absolute;
     bottom: 0;
     height: 44px;
     width: 100%;
@@ -172,7 +172,7 @@ body {
     margin-top: 50px;
     padding-left: 150px;
 }
-#peppe {
+#newsView {
     margin-top: 50px;
 }
 .link {
@@ -188,4 +188,15 @@ body {
 .navItem {
       width: 80%;
       height: 80%;
+}
+.taskBar {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    margin-top: 44px;
+    text-align: center;
+    font-size: 24;
+    color: #ffffff;
+    background-color: #030354;
+    vertical-align: middle;
 }
