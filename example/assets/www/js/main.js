@@ -6,8 +6,8 @@ require.config({
     text: '../lib/require/text-1.0.6',
     async: '../lib/require/async',
     handlebars: '../lib/handlebars/handlebars',
-    templates: '../templates',
-    leaflet: '../lib/leaflet/leaflet'
+    zrss: '../lib/zrss/jquery.zrssfeed.min',
+    templates: '../templates'
   },
   shim: {
     'jquery': {
@@ -23,8 +23,9 @@ require.config({
       deps: ['jquery', 'underscore'],
       exports: 'Parse'
     },
-    'leaflet': {
-      exports: 'L'
+    'zrss': {
+        deps: ['jquery'],
+        exports: 'RSS'
     }
   }
 });
@@ -34,7 +35,7 @@ require(['underscore', 'parse', 'router'],
     function (_, Parse, AppRouter) {
       document.addEventListener("deviceready", run, false);
       function run() {
-        Parse.initialize("WcxDz5mVqJzgHVYM3655WJoVDTphUpAcrhOAzS9C", "26MoNXeBtKABSPAaFAGpGpqRbPZUtodLbvqoxXwF");
+        Parse.initialize("vxTSSGCTPUPw8eQTqy0vPx1vdv3vyDN2ptt1mJG7", "CcugwsFwl4jb36uAiL0Ni1vKSf8SjR3h5JhnJnv4");
         new AppRouter();
         Parse.history.start();
       }

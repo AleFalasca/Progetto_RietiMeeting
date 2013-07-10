@@ -133,7 +133,7 @@ body {
     margin-right: auto;
     text-align: center;
 }
-#listContainer {
+.listContainer {
     position: absolute;
     display: inline-block;
 }
@@ -175,6 +175,7 @@ body {
 #newsView {
     margin-top: 50px;
 }
+
 .link {
     display: inline-block;
     margin-top: 5px;

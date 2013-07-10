@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad", "views/AdView", "views/AdListView", "views/NewsView","views/CategoriesView","views/CreditsView" ,"views/StructureView", "views/PhotofinishView"],
-    function ($, _, Parse, AdCollection, Ad, AdView, AdListView, NewsView,CategoriesView, CreditsView,StructureView, PhotofinishView) {
+define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad", "views/AdView", "views/AdListView", "views/NewsView","views/CategoriesView","views/CreditsView" ,"views/StructureView"],
+    function ($, _, Parse, AdCollection, Ad, AdView, AdListView, NewsView, CategoriesView, CreditsView,StructureView) {
 
     var AppRouter = Parse.Router.extend({
 
@@ -17,7 +17,7 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
 
       initialize: function () {
         this.currentView = undefined;
-        
+
          var ad1 = new Ad({
               title: "Hammer Throw women - Qualification",
               hour:"15:30",
@@ -132,7 +132,6 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
         this.ads = new AdCollection([ad1, ad2, ad3, ad4, ad5, ad6, ad7, ad8, ad9, ad10, ad11, ad12, ad13, ad14, ad15, ad16, ad17, ad18]);
         this.ads.query = new Parse.Query(Ad);
       },
-
       structure: function () {
         if(!this.structureView) {
           this.structureView = new StructureView();

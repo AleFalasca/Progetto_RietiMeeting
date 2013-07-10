@@ -5,8 +5,13 @@ define(["jquery", "underscore", "parse"],
         title: undefined,
         figure: new Image(),
         hour: undefined,
-        day: undefined
-
+        day: undefined,
+        isSaturday: function () {
+            if (this.day = Saturday)
+            return true;
+            else
+            return false
+        }
       }
       });
     return Ad;
