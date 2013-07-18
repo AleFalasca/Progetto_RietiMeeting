@@ -1,0 +1,13 @@
+Hammer Women - Qualification - 8 SEP 2012 15:30
+
+Rank	Athlete / Name  (Date of Birth)	Nation	Result		1	2	3
+1	KLAAS Kathrin (6 FEB 1984)	GER	72.87 q		72.87	70.45	-	
+2	LYSENKO Tatyana (9 OCT 1983)	RUS	70.47 q		69.93	32.61	70.47	
+3	WLODARCZYK Anita (8 AUG 1985)	POL	70.14 q		67.17	x	70.14	
+4	MARGHIEVA Zalina (5 FEB 1988)	MDA	69.35 q		67.81	68.77	69.35	
+5	HRASNOVA Martina (21 MAR 1983)	SVK	68.93 		65.85	68.93	x	
+6	SEDYKH Alexia (13 SEP 1993)	FRA	66.74 		65.28	65.56	66.74	
+7	FIODOROW Joanna (4 MAR 1989)	POL	64.88 		64.88	63.93	x	
+8	PALMIERI Elisa (18 SEP 1983)	ITA	59.87 		x	x	59.87	
+9	MARIANI Micaela (11 FEB 1988)	ITA	57.78 		57.78	x	57.22	
+

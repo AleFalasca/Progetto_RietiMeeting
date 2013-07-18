@@ -83,12 +83,11 @@ body {
     height: 80%;
 }
 .navigationItem {
-    border-bottom: 1px solid #d9e2eb;
-    background: #090909;
     display: block;
     color: white;
-    padding: 15px 0px;
     padding-left: 10px;
+    width: 80%;
+    height:80%
 }
 
 /* END STRUCTURE */
@@ -105,9 +104,10 @@ body {
 }
 
 #figureContainer {
+    margin-top: 55px;
     text-align: center;
-    width: 30%;
-    height: 30%;
+    width: 45%;
+    height: 45%;
 }
 #preview {
     margin: 0 auto;
@@ -157,10 +157,17 @@ body {
     overflow: hidden;
 }
 #creditsView{
-    color: #030354;
     text-overflow: clip;
     text-align: center;
     margin-top: 44px;
+    color: #030354;
+}
+.taskBar {
+    margin-top: 44px;
+    height: 44px;
+    background-color: #030354;
+    color: #efefef;
+    font-size: 2.6em;
 }
 #photofinish {
     width: 44px;
@@ -172,9 +179,7 @@ body {
     margin-top: 50px;
     padding-left: 150px;
 }
-#newsView {
-    margin-top: 50px;
-}
+
 
 .link {
     display: inline-block;
@@ -201,3 +206,13 @@ body {
     background-color: #030354;
     vertical-align: middle;
 }
+#photofinish_icon {
+    margin-top: 70px;
+    margin-right: 25px;
+    float: right;
+}
+/*STYLE FOR RSS FEEDS*/
+
+
+
+

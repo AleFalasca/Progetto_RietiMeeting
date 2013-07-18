@@ -6,12 +6,9 @@ define(["jquery", "underscore", "parse"],
         figure: new Image(),
         hour: undefined,
         day: undefined,
-        isSaturday: function () {
-            if (this.day = Saturday)
-            return true;
-            else
-            return false
-        }
+        photofinish: new Image (),
+        startingListUrl: undefined,
+        resultsUrl: undefined
       }
       });
     return Ad;

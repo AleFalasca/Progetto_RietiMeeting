@@ -6,7 +6,6 @@ require.config({
     text: '../lib/require/text-1.0.6',
     async: '../lib/require/async',
     handlebars: '../lib/handlebars/handlebars',
-    zrss: '../lib/zrss/jquery.zrssfeed.min',
     templates: '../templates'
   },
   shim: {
@@ -22,10 +21,6 @@ require.config({
     'parse': {
       deps: ['jquery', 'underscore'],
       exports: 'Parse'
-    },
-    'zrss': {
-        deps: ['jquery'],
-        exports: 'RSS'
     }
   }
 });

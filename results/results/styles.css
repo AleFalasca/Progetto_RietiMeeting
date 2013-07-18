@@ -1,0 +1,202 @@
+body {
+	background: #fff;
+	margin:0px;
+	padding:0px;
+}
+
+#mittig {
+	width: 1000px;
+	margin:0 auto;
+	position:relative;
+}
+
+#inhalt {
+	width: 1000px;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	margin:0;
+	position:absolute;
+	line-height: 1.5;
+	border-left: 1px #012C70 dotted;
+	border-right: 1px #012C70 dotted;
+}
+
+
+#kopf {
+	background-image: url(http://www.istaf.de/images/kopf.gif);
+	width:1000px;
+	height:200px;
+}
+
+#iaaf {
+  position:relative;
+  left:895px;
+  top:17px;   
+  width:68px;
+}
+
+#dlv {
+  position:relative;
+  left:897px;
+  top:140px;
+  width:115px;
+}
+
+#kopf_leiste {
+	position: absolute;
+	top: 0px;
+	width:100%;
+  height: 22px; 
+  border-bottom: 1px #012C70 dotted;
+}
+#Menue {
+	position: absolute;
+  margin:0;
+	left: 0px;
+	top: 181px;
+  }
+#fahne {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	left: 25px;
+	top: 0px;
+}
+#datum {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	color:#fff;
+	font-size:11px;
+	text-align: right;
+	left: 650px;
+	top: 182px;
+	width: 200px;
+    z-index:99;
+}
+
+#main {
+	position: statik;
+	font-size: small;
+	text-align:left;
+}
+#SpalteLinks {
+	position:relative;
+	width:190px;
+	float:left;
+	padding:5px;
+	padding-left: 15px;    
+}
+#SpalteMitte {
+	position:relative;
+	width:560px;
+	min-height:1300px;
+	padding:8px;
+	float:left;
+	border-left: 1px #012C70 dotted;
+	border-right: 1px #012C70 dotted;
+
+}
+#SpalteRechts {
+	position:relative;
+  text-align:center;
+	width:200px;
+	padding:5px;
+	float:left;  
+}
+
+#footer {
+	position:relative;
+	clear: both;
+	width:1000px;
+	height: 16px;
+	color:#eee;
+	font-size: x-small;
+	text-align:left;
+	background : url(http://www.istaf.de/images/bg_footer.gif);
+	margin:0px;
+  padding:0px;
+}
+
+a:link, a:visited {
+	color: #7F7F7F;
+	text-decoration: none;
+}
+a:active, a:hover {
+color: #000000;
+text-decoration: underline;
+}
+
+a.button:active, a.button:visited, a.button:link {
+background-color:#A8BBFF;
+font-size: 12px;
+font-weight: 500;
+padding: 3px;
+color: #000;
+text-decoration: none;
+border:1px #000 solid;
+text-align:center;
+padding:3px;
+}
+a.button:hover {
+background-color: #b0c4de;
+font-size: 12px;
+font-weight: 500;
+padding: 3px;
+color: #000;
+text-decoration: none;
+border:1px #000 solid;
+text-align:center;
+padding:3px;
+}
+
+a.footer:link, a.footer:visited {
+color: #fff;
+text-decoration: none;
+}
+a.footer:active, a.footer:hover {
+color: #fff;
+text-decoration: underline;
+}
+a.klein {
+font-size: x-small;
+color: #012C70;
+text-decoration: none;
+}
+a.klein:hover {
+font-size: x-small;
+color: #012C70;
+text-decoration: underline;
+}
+
+
+
+
+
+TH {COLOR: #000000;FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif; FONT-SIZE: 12px}
+P {FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif; FONT-SIZE: 12px}
+SPAN {FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif; FONT-SIZE: 12px}
+LI {COLOR: #0099D9;FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif; FONT-SIZE: 12px}
+
+.titel {COLOR: #cc3333; Verdana, FONT-FAMILY: Arial, Geneva, Helvetica, sans-serif; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+.klein {FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif; FONT-SIZE: 11px; TEXT-DECORATION: none}
+.kleinweiss {COLOR: #000000; FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif; FONT-SIZE: 10px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; text-decoration: underline}
+.weissfett {COLOR: #000000; FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif; FONT-SIZE: 11px; font-weight: bold; font-style: normal;}
+.weissfettkursiv {COLOR: #000000;	FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif; FONT-SIZE: 11px; font-weight: bold; font-style: normal;}
+.weisskursiv {COLOR: #000000; FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif; FONT-SIZE: 11px; font-style: normal;}
+.EinfachKlein{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 6px;}
+.OrangeFett { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #364092}
+.Dunkelblau { COLOR: #364092; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 9px; font-variant: normal; font-style: normal; letter-spacing: 0.028em; white-space: normal; cursor: auto }
+.DunkelblauHead { COLOR: #000000 ; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 9px; font-variant: normal; font-style: normal; letter-spacing: 0.028em; white-space: normal; cursor: auto }
+.DunkelblauNormal { COLOR: #000000; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 11px; font-variant: normal; font-style: normal; letter-spacing: 0.028em; white-space: normal; cursor: auto }
+.DunkelblauNormalFett { COLOR: #000000; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 11px; font-variant: normal; font-style: normal; letter-spacing: 0.028em; white-space: normal; cursor: auto ; font-weight: bold}
+.DunkelblauFett { COLOR: #364092; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 13px; font-variant: normal; font-style: normal; letter-spacing: 0.028em; white-space: normal; cursor: auto ; font-weight: bold}
+.DunkelblauFettKlein { COLOR: #000000; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 9px; font-variant: normal; font-style: normal; letter-spacing: 0.028em; white-space: normal; cursor: auto ; font-weight: bold}
+.DunkelblauKlein { COLOR: #000000; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 9px; font-variant: normal; font-style: normal; letter-spacing: 0.028em; white-space: normal; cursor: auto ; font-weight: normal}
+.DunkelblauGross {COLOR: #364092; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 13px; font-variant: normal; font-style: normal; letter-spacing: 0.028em; white-space: normal; cursor: auto ; font-weight: normal;  text-decoration: none}
+.DunkelblauKursiv {COLOR: #000000; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 9Px; font-variant: normal; font-style: italic; letter-spacing: 0.028em; white-space: normal; cursor: auto ; font-weight: normal;  text-decoration: none}
+.DunkelblauSehrGross {COLOR: #0030FE; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 19px; font-variant: normal; font-style: italic; letter-spacing: 0.028em; white-space: normal; cursor: auto ; font-weight: bold;  text-decoration: none}
+.OrangeUnterstrichen { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #E08F10 ; text-decoration: underline}
+.Orange { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #E08F10 }
+.OrangeFetthochgestellt { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #E08F10 ; top: -5px; clip:   rect(   )}
+.DunkelblauUnterstrichenFett { COLOR: #003366 ; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 11px; font-variant: normal; font-style: normal; letter-spacing: 0.028em; white-space: normal; cursor: auto ; text-decoration: underline ; font-weight: bold}
+.toptitel { COLOR: #003366; font-family: Verdana, Arial, Geneva, Helvetica, sans-serif; font-size: 13px; font-variant: normal; font-style: normal; letter-spacing: 0.028em; white-space: normal; cursor: auto ; font-weight: bold}
