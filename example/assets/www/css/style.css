@@ -87,7 +87,8 @@ body {
     color: white;
     padding-left: 10px;
     width: 80%;
-    height:80%
+    height:80%;
+
 }
 
 /* END STRUCTURE */
@@ -111,7 +112,6 @@ body {
 }
 #preview {
     margin: 0 auto;
-    border-radius: 10px;
     width: 90%
 }
 #listItem {
@@ -139,7 +139,6 @@ body {
 }
 #figure{
     margin: auto;
-    border-radius: 10px;
     width: 50%
 }
 #navbar{
@@ -163,6 +162,7 @@ body {
     color: #030354;
 }
 .taskBar {
+    position:fixed;
     margin-top: 44px;
     height: 44px;
     background-color: #030354;
@@ -212,6 +212,25 @@ body {
     float: right;
 }
 /*STYLE FOR RSS FEEDS*/
+.ui-footer .ui-btn-right {
+}
+.articleContent > table > tbody > tr > td > font > br {
+    display: none;
+}
+.articleContent > table > tbody > tr > td > font > br + div {
+    display: none;
+}
+.articleContent * {
+    font-size: medium !important;
+}
+#newsContainer {
+    list-style:  none;
+    display: block;
+}
+#newsContainer li {
+    display: block;
+    height: 44px;
+}
 
 
 

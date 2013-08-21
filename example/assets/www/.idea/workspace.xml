@@ -5,30 +5,34 @@
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/CategoriesView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1372687171552" ignored="false" />
-    <file path="/router.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373965237640" ignored="false" />
+    <file path="/router.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377076313347" ignored="false" />
     <file path="/structure.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373877083084" ignored="false" />
     <file path="/StructureView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373034293976" ignored="false" />
     <file path="/credits.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373532643122" ignored="false" />
     <file path="/CreditsView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373530347693" ignored="false" />
-    <file path="/style.css" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374137709390" ignored="false" />
-    <file path="/ad-details.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374135631299" ignored="false" />
-    <file path="/AdView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374135531733" ignored="false" />
-    <file path="/Ad.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373965025485" ignored="false" />
+    <file path="/style.css" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377077533858" ignored="false" />
+    <file path="/ad-details.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377076409354" ignored="false" />
+    <file path="/AdView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377077187856" ignored="false" />
+    <file path="/Ad.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377076005371" ignored="false" />
     <file path="/PhotofinishView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373964911651" ignored="false" />
     <file path="/require.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1372691519728" ignored="false" />
     <file path="/photofinish.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373965008375" ignored="false" />
     <file path="/Credits.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1372695571350" ignored="false" />
-    <file path="/news.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374136821407" ignored="false" />
-    <file path="/ad-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1372864275093" ignored="false" />
+    <file path="/news.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1376057536936" ignored="false" />
+    <file path="/ad-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374484114838" ignored="false" />
     <file path="/cat-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1372864306970" ignored="false" />
-    <file path="/NewsView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374136983612" ignored="false" />
-    <file path="/main.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373035100995" ignored="false" />
+    <file path="/NewsView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1375019237525" ignored="false" />
+    <file path="/main.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1375019434506" ignored="false" />
     <file path="$PROJECT_DIR$/lib/cordova/cordova-2.6.0.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373530060580" ignored="false" />
     <file path="/CreditsView.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373530237274" ignored="false" />
     <file path="/FeedItem.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373537518046" ignored="false" />
     <file path="/news-details.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373878556411" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../RSSDemo/assets/www/.idea/workspace.xml" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374049151544" ignored="false" />
     <file path="/FeedAggregator.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374136605984" ignored="false" />
+    <file path="/AdCollection.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374482906075" ignored="false" />
+    <file path="/AdListSat.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374830856749" ignored="false" />
+    <file path="/AdListSun.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374483948365" ignored="false" />
+    <file path="/df.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374943073404" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,19 +52,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ad-details.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/ad-details.html">
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="29" selection-start="78" selection-end="94" vertical-scroll-proportion="-1.9615384">
+            <state line="48" column="78" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="ad-list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ad-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="212" column="27" selection-start="4759" selection-end="4759" vertical-scroll-proportion="0.64176244">
+            <state line="3" column="19" selection-start="94" selection-end="101" vertical-scroll-proportion="-1.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdView.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/views/AdView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="60" selection-start="640" selection-end="640" vertical-scroll-proportion="0.45075125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/views/NewsView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="33" selection-start="244" selection-end="291" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ad-list-item.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ad-list-item.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ad-details.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ad-details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="31" selection-start="382" selection-end="382" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
@@ -76,30 +116,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/structure.html" />
-        <option value="$PROJECT_DIR$/../../../../casaaq/www/css/style.css" />
-        <option value="$PROJECT_DIR$/templates/news-details.html" />
-        <option value="$PROJECT_DIR$/lib/rss/jquery.zrssfeed.js" />
-        <option value="$PROJECT_DIR$/js/views/PhotofinishView.js" />
-        <option value="$PROJECT_DIR$/templates/photofinish.html" />
-        <option value="$PROJECT_DIR$/js/models/Ad.js" />
-        <option value="$PROJECT_DIR$/js/router.js" />
+        <option value="$PROJECT_DIR$/js/views/AdListView.js" />
+        <option value="$PROJECT_DIR$/js/views/StructureView.js" />
+        <option value="$PROJECT_DIR$/js/views/AdListSun.js" />
+        <option value="$PROJECT_DIR$/templates/ad-list.html" />
+        <option value="$PROJECT_DIR$/js/views/AdListSat.js" />
+        <option value="$PROJECT_DIR$/js/models/getter.js" />
+        <option value="$PROJECT_DIR$/df.js" />
+        <option value="$PROJECT_DIR$/lib/rss/jquery.zrssfeed.min.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/js/views/resultView.js" />
-        <option value="$PROJECT_DIR$/js/views/AdView.js" />
-        <option value="$PROJECT_DIR$/js/models/FeedAggregator.js" />
         <option value="$PROJECT_DIR$/templates/news.html" />
         <option value="$PROJECT_DIR$/js/views/NewsView.js" />
+        <option value="$PROJECT_DIR$/js/router.js" />
+        <option value="$PROJECT_DIR$/js/models/Ad.js" />
         <option value="$PROJECT_DIR$/templates/ad-details.html" />
+        <option value="$PROJECT_DIR$/js/views/AdView.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="64" />
+    <option name="y" value="-4" />
+    <option name="width" value="1303" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -170,6 +210,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -182,11 +290,11 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../RSSDemo/assets/www" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../casaaq/www" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -222,18 +330,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944155" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2488263" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -302,103 +410,108 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/news-details.html">
+    <entry file="file://$PROJECT_DIR$/js/views/AdListSun.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="10" column="43" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/rss/jquery.zrssfeed.js">
+    <entry file="file://$PROJECT_DIR$/js/views/AdListSat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="280" column="4" selection-start="6837" selection-end="6837" vertical-scroll-proportion="0.0" />
+        <state line="25" column="33" selection-start="831" selection-end="831" vertical-scroll-proportion="0.51428574" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/PhotofinishView.js">
+    <entry file="file://$PROJECT_DIR$/lib/rss/jquery.zrssfeed.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="362" selection-end="362" vertical-scroll-proportion="0.33392859" />
+        <state line="7" column="108" selection-start="3754" selection-end="3754" vertical-scroll-proportion="0.21755028" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/photofinish.html">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="99" selection-end="99" vertical-scroll-proportion="0.09550562" />
+        <state line="27" column="27" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ad-list.html">
+    <entry file="file://$PROJECT_DIR$/templates/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="73" selection-end="92" vertical-scroll-proportion="0.09550562" />
+        <state line="2" column="4" selection-start="30" selection-end="30" vertical-scroll-proportion="-1.25" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/collections/AdCollection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="77" selection-start="6400" selection-end="6400" vertical-scroll-proportion="4.599634">
+        <state line="48" column="78" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/Ad.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="9" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ad-list-item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/AdListView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="413" selection-end="413" vertical-scroll-proportion="0.3642857">
+        <state line="13" column="45" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/templates/ad-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="549" selection-end="549" vertical-scroll-proportion="0.54642856">
+        <state line="3" column="19" selection-start="94" selection-end="101" vertical-scroll-proportion="-1.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/news.html">
+    <entry file="file://$PROJECT_DIR$/js/views/AdListItemView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="31" selection-start="311" selection-end="311" vertical-scroll-proportion="0.41385767">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/NewsView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="42" selection-start="218" selection-end="218" vertical-scroll-proportion="0.09107143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="64" selection-start="645" selection-end="645" vertical-scroll-proportion="0.60714287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/resultView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="72" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.7892857">
-          <folding>
-            <element signature="e#1152#1311#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/Ad.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="371" vertical-scroll-proportion="0.0">
+        <state line="25" column="37" selection-start="716" selection-end="716" vertical-scroll-proportion="0.6487889">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/ad-details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="78" selection-end="94" vertical-scroll-proportion="-1.9615384">
+        <state line="11" column="31" selection-start="382" selection-end="382" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/NewsView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="33" selection-start="244" selection-end="291" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="27" selection-start="4759" selection-end="4759" vertical-scroll-proportion="0.64176244">
+        <state line="232" column="24" selection-start="5122" selection-end="5122" vertical-scroll-proportion="0.71843004">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/AdView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="60" selection-start="640" selection-end="640" vertical-scroll-proportion="0.45075125">
           <folding />
         </state>
       </provider>

@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad", "views/AdView", "views/AdListView", "views/NewsView","views/CategoriesView","views/CreditsView" ,"views/StructureView"],
-    function ($, _, Parse, AdCollection, Ad, AdView, AdListView, NewsView, CategoriesView, CreditsView,StructureView) {
+define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad", "views/AdView", "views/AdListView","views/AdListSat", "views/AdListSun", "views/NewsView","views/CategoriesView","views/CreditsView" ,"views/StructureView"],
+    function ($, _, Parse, AdCollection, Ad, AdView, AdListView, AdListSat, AdListSun, NewsView, CategoriesView, CreditsView,StructureView) {
 
     var AppRouter = Parse.Router.extend({
 
@@ -10,146 +10,195 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
        "calendar": "list",
        "ads/:id": "adDetails",
        "categories": "categories",
-       "goPhotofinish": "photofinish",
        "credits": "credits",
        "feedDetails": "feedDetails"
       },
 
       initialize: function () {
         this.currentView = undefined;
+        var ws = new WebSocket("ws://localhost:8080/RietiMeeting/WsChatServlet");
+          ws.onopen =  function (){
+              console.log("connection opened");
+              ws.send("Can U get my tables?");
+          }
+
+          ws.onclose = function() {
+              console.log("connection closed");
+          }
+          ws.onerror = function (){
+              console.log("an error is occurred");
+          }
+          ws.onmessage = function (event){
+             console.log("message incoming: "+event.data);
+              var tables = event.data;
+              var tablesForm = JSON.parse(tables);
+              for(var key in tablesForm){
+                  var attrName = key;
+                  var attrValue = tablesForm[key];
+                  sessionStorage.setItem(attrName, attrValue);
+              }
+
+          }
 
          var ad1 = new Ad({
-              title: "Hammer Throw women - Qualification",
+              title: "Women Hammer-Qualification",
               hour:"15:30",
               figure: "res/sports/hammer throw women.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              day: "Saturday",
+              nameForWs: "Man-100m",
+              table:sessionStorage.getItem("Women-Women Hammer-Qualification")
+      });
 
-          });
-          var ad2 = new Ad({
-              title: "Hammer Throw men - Qualification",
+             var ad2 = new Ad({
+              title: "Men Hammer-Qualification",
               hour: "17:00",
               figure:"res/sports/hammer throw men.png",
-              photofinish:"http://www.rietimeeting.com/wp-content/uploads/results/1010040.jpg",
-              day: "Saturday"
-
-          });
+              day: "Saturday",
+              table:sessionStorage.getItem("Women-Men Hammer-Qualification")
+              });
           var ad3 = new Ad({
-              title: "100 m Man",
-              hour: "28:00",
-              figure:"res/sports/100 m man.png",
+              title: "Hammer Throw",
+              hour:"16:45",
+              figure: "res/sports/hammer throw women.png",
               day: "Sunday",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",              startingListUrl:"http://www.rietimeeting.com/wp-content/uploads/results/sh0010040.html",
-              resultsUrl: "http://www.rietimeeting.com/wp-content/uploads/results/re0010040.html"
+              table:sessionStorage.getItem("Women-Hammer Throw")
+              })
 
-          });
           var ad4 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
+              title: "Hammer Throw",
+              hour: "16:45",
               figure:"res/sports/hammer throw men.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              day: "Sunday",
+              table:sessionStorage.getItem("Man-Hammer Throw")
           });
-          var ad5 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
+        var ad5 = new Ad({
+              title: "Pole Vault",
               hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              day: "Saturday"
+              figure:"res/sports/pole vault women.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Women-Pole Vault")
           });
           var ad6 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              title: "400mH",
+              hour: "17:03",
+              figure:"res/sports/400 mH men.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Man-400mH")
           });
           var ad7 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              title: "400m",
+              hour: "17:12",
+              figure:"res/sports/400 m women.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Women-400m")
+
           });
           var ad8 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              title: "High Jump",
+              hour: "17:15",
+              figure:"res/sports/high jump women.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Women-High Jump")
           });
           var ad9 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              title: "100m",
+              hour: "17:20",
+              figure:"res/sports/100 m women.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Women-100m")
+
           });
           var ad10 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              title: "1500m",
+              hour: "17:28",
+              figure:"res/sports/1500 m men.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Man-1500m")
+
+
           });
           var ad11 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              title: "100m",
+              hour: "17:37",
+              figure:"res/sports/100 m man.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Man-100m")
+
           });
           var ad12 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              title: "3000m",
+              hour: "17:45",
+              figure:"res/sports/3000 m women.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Women-3000m")
+
           });
           var ad13 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              title: "Triple Jump",
+              hour: "17:55",
+              figure:"res/sports/triple jump men.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Man-Triple Jump")
+
           });
           var ad14 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              title: "800m",
+              hour: "18:00",
+              figure:"res/sports/800 m men.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Man-800m")
+
           });
           var ad15 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish:"http://www.rietimeeting.com/wp-content/uploads/results/1010040.jpg",
-              day: "Saturday"
+              title: "1500m",
+              hour: "18:08",
+              figure:"res/sports/1500 m women.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Women-1500m")
           });
           var ad16 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish: "http://localhost/Progetto_RietiMeeting/results/1010040.jpg",
-              day: "Saturday"
+              title: "400mH",
+              hour: "18:18",
+              figure:"res/sports/400 mH women.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Women-400mH")
           });
           var ad17 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish:"http://www.rietimeeting.com/wp-content/uploads/results/1010040.jpg",
-              day: "Saturday"
+              title: "Shot Put",
+              hour: "18:20",
+              figure:"res/sports/shot put women.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Women-Shot Put")
           });
           var ad18 = new Ad({
-              title: "Hammer Throw Cow - Qualification",
-              hour: "17:00",
-              figure:"res/sports/hammer throw men.png",
-              photofinish:"http://www.rietimeeting.com/wp-content/uploads/results/1010040.jpg",
-              day: "Saturday"
+              title: "400m",
+              hour: "18:28",
+              figure:"res/sports/400 m men.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Man-400m")
           });
-        this.ads = new AdCollection([ad1, ad2, ad3, ad4, ad5, ad6, ad7, ad8, ad9, ad10, ad11, ad12, ad13, ad14, ad15, ad16, ad17, ad18]);
+          var ad19 = new Ad({
+              title: "800m",
+              hour: "18:35",
+              figure:"res/sports/800 m women.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Women-800m")
+          });
+          var ad20 = new Ad({
+              title: "3000m",
+              hour: "18:42",
+              figure:"res/sports/3000 m men.png",
+              day: "Sunday",
+              table:sessionStorage.getItem("Man-3000m")
+
+          })
+
+        this.ads = new AdCollection([ad1,ad2, ad3, ad4, ad5, ad6, ad7, ad8, ad9, ad10, ad11, ad12, ad13, ad14, ad15, ad16, ad17, ad18, ad19, ad20]);
+      //  this.adsSat = this.ads.byDay("Saturday");
+       // this.adsSun = this.ads.byDay("Sunday");
         this.ads.query = new Parse.Query(Ad);
+       // this.adsSat.query = new Parse.Query(Ad);
+       // this.adsSun.query = new Parse.Query(Ad);
       },
       structure: function () {
         if(!this.structureView) {
@@ -157,21 +206,34 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
           this.structureView.render();
           this.contents = this.structureView.$el.find("#content #contents");
         }
-        this.list();
+        this.listSat();
       },
-
       list: function () {
         var page = new AdListView({
           model: this.ads
         });
         this.changePage(page);
       },
+        listSat: function () {
+            var page = new AdListSat({
+                model: this.ads
+                       });
+            this.changePage(page);
+        },
+        listSun: function () {
+            var page = new AdListSun({
+                model: this.adsSun
+            });
+            this.changePage(page);
+        },
       adDetails: function (id) {
         var ad = this.ads.getByCid(id);
         this.changePage(new AdView({
           model: ad
         }));
       },
+
+
  categories: function () {
      var page = new CategoriesView({
          model: this.ads
@@ -187,11 +249,6 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
             var page = new CreditsView({
             });
             this.changePage(page);
-        },
-        photofinish: function (){
-         var page = new PhotofinishView({
-         });
-         this.changePage(page);
         },
        changePage: function (page) {
         if(this.currentView) {

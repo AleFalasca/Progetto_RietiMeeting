@@ -12,12 +12,23 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/structure
           "touchend #credits": "goCredits"
         },
 
-        goNews: function () {
-          Parse.history.navigate("news", {trigger: true});
-        },
+
 
         goBack: function () {
           window.history.back();
+
+        },
+        goNews: function () {
+            Parse.history.navigate("news", {trigger: true});
+        },
+        goCalendar: function () {
+            Parse.history.navigate("calendar", {trigger: true});
+        },
+        goCategories: function () {
+            Parse.history.navigate("categories", {trigger: true});
+        },
+        goCredits: function (){
+            Parse.history.navigate("credits", {trigger: true});
         },
 
         template: Handlebars.compile(template),
@@ -29,15 +40,7 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/structure
           $('body').append($(this.el));
           return this;
         },
-        goCalendar: function () {
-            Parse.history.navigate("calendar", {trigger: true});
-        },
-        goCategories: function () {
-            Parse.history.navigate("categories", {trigger: true});
-        },
-        goCredits: function (){
-            Parse.history.navigate("credits", {trigger: true});
-        }
+
       });
     return StructureView;
 

@@ -1,4 +1,4 @@
-define(["jquery", "underscore", "parse", "handlebars", "views/AdListItemView", "text!templates/ad-list.html"],
+define(["jquery", "underscore", "parse", "handlebars", "views/AdListItemView", "text!templates/cat-list.html"],
     function ($, _, Parse, Handlebars, AdListItemView, template) {
 
     var AdListView = Parse.View.extend({

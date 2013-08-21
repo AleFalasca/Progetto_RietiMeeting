@@ -6,10 +6,8 @@ define(["jquery", "underscore", "parse"],
         figure: new Image(),
         hour: undefined,
         day: undefined,
-        photofinish: new Image (),
-        startingListUrl: undefined,
-        resultsUrl: undefined
-      }
+        table: undefined
+        }
       });
     return Ad;
   });
