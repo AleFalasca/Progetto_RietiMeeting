@@ -5,12 +5,12 @@
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/CategoriesView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1372687171552" ignored="false" />
-    <file path="/router.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377076313347" ignored="false" />
+    <file path="/router.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377733896783" ignored="false" />
     <file path="/structure.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373877083084" ignored="false" />
     <file path="/StructureView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373034293976" ignored="false" />
     <file path="/credits.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373532643122" ignored="false" />
     <file path="/CreditsView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373530347693" ignored="false" />
-    <file path="/style.css" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377077533858" ignored="false" />
+    <file path="/style.css" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377872572780" ignored="false" />
     <file path="/ad-details.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377076409354" ignored="false" />
     <file path="/AdView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377077187856" ignored="false" />
     <file path="/Ad.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377076005371" ignored="false" />
@@ -20,7 +20,7 @@
     <file path="/Credits.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1372695571350" ignored="false" />
     <file path="/news.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1376057536936" ignored="false" />
     <file path="/ad-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374484114838" ignored="false" />
-    <file path="/cat-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1372864306970" ignored="false" />
+    <file path="/cat-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377872388196" ignored="false" />
     <file path="/NewsView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1375019237525" ignored="false" />
     <file path="/main.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1375019434506" ignored="false" />
     <file path="$PROJECT_DIR$/lib/cordova/cordova-2.6.0.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373530060580" ignored="false" />
@@ -33,6 +33,8 @@
     <file path="/AdListSat.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374830856749" ignored="false" />
     <file path="/AdListSun.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374483948365" ignored="false" />
     <file path="/df.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374943073404" ignored="false" />
+    <file path="/feeds-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377731855562" ignored="false" />
+    <file path="/load.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377733593326" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,55 +54,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/router.js">
+      <file leaf-file-name="AdListView.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/views/AdListView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="78" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ad-list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/ad-list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="19" selection-start="94" selection-end="101" vertical-scroll-proportion="-1.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdView.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/views/AdView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="60" selection-start="640" selection-end="640" vertical-scroll-proportion="0.45075125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/views/NewsView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="33" selection-start="244" selection-end="291" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ad-list-item.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/ad-list-item.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ad-details.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/ad-details.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="31" selection-start="382" selection-end="382" vertical-scroll-proportion="-6.875">
+            <state line="26" column="54" selection-start="728" selection-end="728" vertical-scroll-proportion="0.65108514">
               <folding />
             </state>
           </provider>
@@ -116,21 +73,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/views/AdListView.js" />
-        <option value="$PROJECT_DIR$/js/views/StructureView.js" />
-        <option value="$PROJECT_DIR$/js/views/AdListSun.js" />
-        <option value="$PROJECT_DIR$/templates/ad-list.html" />
-        <option value="$PROJECT_DIR$/js/views/AdListSat.js" />
-        <option value="$PROJECT_DIR$/js/models/getter.js" />
-        <option value="$PROJECT_DIR$/df.js" />
-        <option value="$PROJECT_DIR$/lib/rss/jquery.zrssfeed.min.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/templates/news.html" />
         <option value="$PROJECT_DIR$/js/views/NewsView.js" />
-        <option value="$PROJECT_DIR$/js/router.js" />
         <option value="$PROJECT_DIR$/js/models/Ad.js" />
         <option value="$PROJECT_DIR$/templates/ad-details.html" />
+        <option value="$PROJECT_DIR$/js/views/AdListItemView.js" />
+        <option value="$PROJECT_DIR$/js/views/FeedListItemView.js" />
         <option value="$PROJECT_DIR$/js/views/AdView.js" />
+        <option value="$PROJECT_DIR$/js/views/FeedView.js" />
+        <option value="$PROJECT_DIR$/js/views/FeedListView.js" />
+        <option value="$PROJECT_DIR$/js/views/LoadingView.js" />
+        <option value="$PROJECT_DIR$/templates/load.html" />
+        <option value="$PROJECT_DIR$/js/router.js" />
+        <option value="$PROJECT_DIR$/templates/cat-list.html" />
+        <option value="$PROJECT_DIR$/templates/feeds-list.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
@@ -290,11 +247,11 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../casaaq/www" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../casaaq/www" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -336,7 +293,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2488263" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2488263" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -414,32 +371,29 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/views/AdListSun.js">
+    <entry file="file://$PROJECT_DIR$/js/views/AdListItemView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" />
+        <state line="0" column="73" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdListSat.js">
+    <entry file="file://$PROJECT_DIR$/js/views/AdView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="33" selection-start="831" selection-end="831" vertical-scroll-proportion="0.51428574" />
+        <state line="0" column="71" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/rss/jquery.zrssfeed.min.js">
+    <entry file="file://$PROJECT_DIR$/js/views/FeedView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="108" selection-start="3754" selection-end="3754" vertical-scroll-proportion="0.21755028" />
+        <state line="0" column="75" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/js/views/CreditsView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0" />
+        <state line="7" column="0" selection-start="160" selection-end="579" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="30" selection-end="30" vertical-scroll-proportion="-1.25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/collections/AdCollection.js">
+    <entry file="file://$PROJECT_DIR$/js/views/StructureView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -448,70 +402,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="78" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.0">
+        <state line="24" column="60" selection-start="1177" selection-end="1177" vertical-scroll-proportion="-1.3805461">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/Ad.js">
+    <entry file="file://$PROJECT_DIR$/js/views/FeedListItemView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+        <state line="26" column="41" selection-start="753" selection-end="761" vertical-scroll-proportion="0.65108514">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ad-list-item.html">
+    <entry file="file://$PROJECT_DIR$/js/views/LoadingView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="75" selection-start="235" selection-end="235" vertical-scroll-proportion="0.17529215">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdListView.js">
+    <entry file="file://$PROJECT_DIR$/templates/load.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="45" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+        <state line="0" column="70" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/structure.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="70" selection-start="129" selection-end="167" vertical-scroll-proportion="0.07826087">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/ad-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="94" selection-end="101" vertical-scroll-proportion="-1.875">
+        <state line="6" column="23" selection-start="155" selection-end="155" vertical-scroll-proportion="0.15652174">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdListItemView.js">
+    <entry file="file://$PROJECT_DIR$/js/views/FeedListView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="37" selection-start="716" selection-end="716" vertical-scroll-proportion="0.6487889">
+        <state line="0" column="102" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ad-details.html">
+    <entry file="file://$PROJECT_DIR$/templates/cat-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="382" selection-end="382" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/NewsView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="244" selection-end="291" vertical-scroll-proportion="0.0">
+        <state line="1" column="10" selection-start="35" selection-end="35" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="24" selection-start="5122" selection-end="5122" vertical-scroll-proportion="0.71843004">
+        <state line="223" column="29" selection-start="4964" selection-end="4964" vertical-scroll-proportion="3.9692833">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdView.js">
+    <entry file="file://$PROJECT_DIR$/templates/feeds-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="60" selection-start="640" selection-end="640" vertical-scroll-proportion="0.45075125">
+        <state line="3" column="0" selection-start="58" selection-end="58" vertical-scroll-proportion="0.07826087">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/AdListView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="54" selection-start="728" selection-end="728" vertical-scroll-proportion="0.65108514">
           <folding />
         </state>
       </provider>

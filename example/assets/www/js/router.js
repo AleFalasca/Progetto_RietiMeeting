@@ -1,12 +1,12 @@
-define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad", "views/AdView", "views/AdListView","views/AdListSat", "views/AdListSun", "views/NewsView","views/CategoriesView","views/CreditsView" ,"views/StructureView"],
-    function ($, _, Parse, AdCollection, Ad, AdView, AdListView, AdListSat, AdListSun, NewsView, CategoriesView, CreditsView,StructureView) {
+define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad", "views/AdView", "views/AdListView","views/AdListSat", "views/AdListSun", "views/CategoriesView","views/CreditsView", "collections/FeedCollection", "models/Feed", "views/FeedView", "views/FeedListView", "views/StructureView"],
+    function ($, _, Parse, AdCollection, Ad, AdView, AdListView, AdListSat, AdListSun,  CategoriesView, CreditsView, FeedCollection, Feed, FeedView, FeedListView, StructureView) {
 
     var AppRouter = Parse.Router.extend({
 
       routes: {
        "": "structure",
        "list": "list",
-       "news": "news",
+       "news": "feedlist",
        "calendar": "list",
        "ads/:id": "adDetails",
        "categories": "categories",
@@ -16,6 +16,19 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
 
       initialize: function () {
         this.currentView = undefined;
+          $.ajax({
+              url:"http://www.rietimeeting.com/feed",
+              dataType: 'xml',
+              success:function(res,code) {
+                  var xml = new XMLSerializer().serializeToString(res);
+                  //console.log(xml);
+                  window.sessionStorage.setItem("xml", xml);
+              }
+          });
+          var entries = this.parseFeeds();
+          this.feeds = new FeedCollection([]);
+          this.feeds.query = new Parse.Query(Feed);
+          this.feeds.reset(entries);
         var ws = new WebSocket("ws://localhost:8080/RietiMeeting/WsChatServlet");
           ws.onopen =  function (){
               console.log("connection opened");
@@ -37,7 +50,6 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
                   var attrValue = tablesForm[key];
                   sessionStorage.setItem(attrName, attrValue);
               }
-
           }
 
          var ad1 = new Ad({
@@ -214,6 +226,38 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
         });
         this.changePage(page);
       },
+        feedlist: function () {
+            var page = new FeedListView({
+                model: this.feeds
+            });
+            this.changePage(page);
+        },
+        feedDetails: function (id) {
+            var feed = this.feeds.getByCid(id);
+            this.changePage(new FeedView({
+                model: feed
+            }));
+        },
+        parseFeeds: function () {
+            var entries = []
+            var feeds = window.sessionStorage.getItem("xml");
+            // console.log("ciao "+feeds);
+            var xml = new window.DOMParser().parseFromString(feeds, "text/xml");
+            //console.log(xml);
+            var sel = $(xml);
+            var items = sel.find("item");
+            $.each(items, function(i, v) {
+                entry = new Feed({
+                    title:$(v).find("title").text(),
+                    desc:$.trim($(v).find("encoded").text())
+                });
+                //return entry;
+                //console.log(entry);
+                entries.push(entry);
+                // this.feeds.push(entry);
+            });
+            return entries;
+        },
         listSat: function () {
             var page = new AdListSat({
                 model: this.ads
