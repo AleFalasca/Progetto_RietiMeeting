@@ -2,42 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd89833-8e20-4814-96ab-efb9f5f8a734" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/models/Ad.js" afterPath="$PROJECT_DIR$/example/assets/www/js/models/Ad.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/views/AdListSat.js" afterPath="$PROJECT_DIR$/example/assets/www/js/views/AdListSat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/views/AdListSun.js" afterPath="$PROJECT_DIR$/example/assets/www/js/views/AdListSun.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example/assets/www/templates/aths-list-item.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/js/collections/AdCollection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/js/models/Ad.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/js/views/AdListItemView.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/js/views/AdListSat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/js/views/AdListSun.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/js/views/AdListView.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/js/views/AdView.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/js/views/PhotofinishView.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/lib/parse/parse-1.2.7.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/res/generic_img/image-load.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/res/generic_img/photofinish_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/templates/ad-details.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/templates/ad-list-item.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/templates/ad-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/templates/load.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/example/assets/www/templates/news.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/proxy.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/gen/org/apache/cordova/example/R.java" afterPath="$PROJECT_DIR$/example/gen/org/apache/cordova/example/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/.idea/www.iml" afterPath="$PROJECT_DIR$/example/assets/www/.idea/www.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/AndroidManifest.xml" afterPath="$PROJECT_DIR$/example/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/views/CategoriesView.js" afterPath="$PROJECT_DIR$/example/assets/www/js/views/CategoriesView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/views/CreditsView.js" afterPath="$PROJECT_DIR$/example/assets/www/js/views/CreditsView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/views/NewsView.js" afterPath="$PROJECT_DIR$/example/assets/www/js/views/NewsView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/views/PhotofinishView.js" afterPath="$PROJECT_DIR$/example/assets/www/js/views/PhotofinishView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/templates/ad-details.html" afterPath="$PROJECT_DIR$/example/assets/www/templates/ad-details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/models/Feed.js" afterPath="$PROJECT_DIR$/example/assets/www/js/models/Feed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/views/FeedListItemView.js" afterPath="$PROJECT_DIR$/example/assets/www/js/views/FeedListItemView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/views/FeedListView.js" afterPath="$PROJECT_DIR$/example/assets/www/js/views/FeedListView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/views/FeedView.js" afterPath="$PROJECT_DIR$/example/assets/www/js/views/FeedView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/views/LoadingView.js" afterPath="$PROJECT_DIR$/example/assets/www/js/views/LoadingView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/views/StructureView.js" afterPath="$PROJECT_DIR$/example/assets/www/js/views/StructureView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/res/xml/config.xml" afterPath="$PROJECT_DIR$/example/res/xml/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/templates/credits.html" afterPath="$PROJECT_DIR$/example/assets/www/templates/credits.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/.idea/encodings.xml" afterPath="$PROJECT_DIR$/example/assets/www/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/templates/feed-details.html" afterPath="$PROJECT_DIR$/example/assets/www/templates/feed-details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/templates/feeds-list-item.html" afterPath="$PROJECT_DIR$/example/assets/www/templates/feeds-list-item.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/index.html" afterPath="$PROJECT_DIR$/example/assets/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/main.js" afterPath="$PROJECT_DIR$/example/assets/www/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/.idea/misc.xml" afterPath="$PROJECT_DIR$/example/assets/www/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/.idea/modules.xml" afterPath="$PROJECT_DIR$/example/assets/www/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/templates/news.html" afterPath="$PROJECT_DIR$/example/assets/www/templates/news.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/templates/photofinish.html" afterPath="$PROJECT_DIR$/example/assets/www/templates/photofinish.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/project.properties" afterPath="$PROJECT_DIR$/example/project.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/js/router.js" afterPath="$PROJECT_DIR$/example/assets/www/js/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/example/assets/www/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/res/values/strings.xml" afterPath="$PROJECT_DIR$/example/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/templates/structure.html" afterPath="$PROJECT_DIR$/example/assets/www/templates/structure.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/css/style.css" afterPath="$PROJECT_DIR$/example/assets/www/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/.idea/vcs.xml" afterPath="$PROJECT_DIR$/example/assets/www/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/.idea/workspace.xml" afterPath="$PROJECT_DIR$/example/assets/www/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/assets/www/.idea/www.iml" afterPath="$PROJECT_DIR$/example/assets/www/.idea/www.iml" />
     </list>
     <ignored path="Progetto_RietiMeeting.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1377557873538" ignored="false" />
+    <file path="/Dummy.txt" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379613973439" ignored="false" />
     <file path="/index.html" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372344239442" ignored="false" />
     <file path="$USER_HOME$/Desktop/Nuova cartella/www/js/router.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372345352601" ignored="false" />
     <file path="$USER_HOME$/Desktop/Nuova cartella/www/js/collections/AdCollection.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372344947517" ignored="false" />
     <file path="/AdCollection.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372344947517" ignored="false" />
-    <file path="/Feed.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372344972122" ignored="false" />
+    <file path="/Feed.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379517525581" ignored="false" />
     <file path="$USER_HOME$/Desktop/Nuova cartella/www/js/models/Feed.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372344974178" ignored="false" />
     <file path="$USER_HOME$/Desktop/Nuova cartella/www/js/views/FeedListItemView.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372345326924" ignored="false" />
     <file path="/FeedListItemView.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372345053328" ignored="false" />
-    <file path="/router.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372427894402" ignored="false" />
+    <file path="/router.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379614003481" ignored="false" />
     <file path="$USER_HOME$/Desktop/Nuova cartella/www/js/views/FeedsView.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372345306972" ignored="false" />
     <file path="$USER_HOME$/Desktop/Nuova cartella/www/js/views/FeedsListView.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372345316789" ignored="false" />
     <file path="$USER_HOME$/Desktop/Nuova cartella/www/js/collections/FeedCollection.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372345350418" ignored="false" />
@@ -52,7 +76,19 @@
     <file path="/AdCollectionSaturday.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372429510301" ignored="false" />
     <file path="/AdCollectionSunday.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372428813760" ignored="false" />
     <file path="/Ad.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1372428752425" ignored="false" />
-    <file path="/style.css" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1377510906765" ignored="false" />
+    <file path="/style.css" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379600367447" ignored="false" />
+    <file path="/loading.html" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379516311106" ignored="false" />
+    <file path="/LoadinView.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379516364709" ignored="false" />
+    <file path="/feed-details.html" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379517918621" ignored="false" />
+    <file path="/credits.html" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379600304732" ignored="false" />
+    <file path="/feeds-list-item.html" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379599856696" ignored="false" />
+    <file path="/comp-details.html" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379600278846" ignored="false" />
+    <file path="/AthCollection.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379601336923" ignored="false" />
+    <file path="/AthListView.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379602869825" ignored="false" />
+    <file path="/ath-list.html" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379602192901" ignored="false" />
+    <file path="/aths-list-item.html" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379602297628" ignored="false" />
+    <file path="/ath-details.html" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379602456926" ignored="false" />
+    <file path="/StructureView.js" changelist="8cd89833-8e20-4814-96ab-efb9f5f8a734" time="1379602624739" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,19 +108,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/example/assets/www/css/style.css">
+      <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/example/assets/www/js/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="249" column="24" selection-start="5614" selection-end="5614" vertical-scroll-proportion="0.27380952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ad-details.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/assets/www/templates/ad-details.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="29" selection-start="364" selection-end="380" vertical-scroll-proportion="0.0">
+            <state line="22" column="60" selection-start="1202" selection-end="1215" vertical-scroll-proportion="0.56122446">
               <folding />
             </state>
           </provider>
@@ -108,13 +135,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/example/assets/www/index.html" />
-        <option value="$PROJECT_DIR$/example/assets/www/js/collections/AdCollection.js" />
-        <option value="$PROJECT_DIR$/example/assets/www/js/models/Ad.js" />
-        <option value="$PROJECT_DIR$/example/assets/www/js/collections/AdCollectionSunday.js" />
-        <option value="$PROJECT_DIR$/example/assets/www/js/collections/AdCollectionSaturday.js" />
-        <option value="$PROJECT_DIR$/example/assets/www/js/router.js" />
+        <option value="$PROJECT_DIR$/example/assets/www/js/models/Feed.js" />
+        <option value="$PROJECT_DIR$/example/assets/www/templates/feeds-list-item.html" />
+        <option value="$PROJECT_DIR$/example/assets/www/templates/feed-details.html" />
+        <option value="$PROJECT_DIR$/example/assets/www/templates/credits.html" />
         <option value="$PROJECT_DIR$/example/assets/www/css/style.css" />
+        <option value="$PROJECT_DIR$/example/assets/www/templates/comp-details.html" />
+        <option value="$PROJECT_DIR$/example/assets/www/js/collections/AthCollection.js" />
+        <option value="$PROJECT_DIR$/example/assets/www/js/views/CompView.js" />
+        <option value="$PROJECT_DIR$/example/assets/www/templates/ath-list.html" />
+        <option value="$PROJECT_DIR$/example/assets/www/templates/aths-list-item.html" />
+        <option value="$PROJECT_DIR$/example/assets/www/js/views/AthListItemView.js" />
+        <option value="$PROJECT_DIR$/example/assets/www/js/views/AthView.js" />
+        <option value="$PROJECT_DIR$/example/assets/www/templates/ath-details.html" />
+        <option value="$PROJECT_DIR$/example/assets/www/js/views/StructureView.js" />
+        <option value="$PROJECT_DIR$/example/assets/www/js/views/AthListView.js" />
+        <option value="$PROJECT_DIR$/example/assets/www/js/router.js" />
       </list>
     </option>
   </component>
@@ -150,6 +186,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,13 +263,154 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Progetto_RietiMeeting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Progetto_RietiMeeting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Progetto_RietiMeeting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Progetto_RietiMeeting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Progetto_RietiMeeting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Progetto_RietiMeeting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Progetto_RietiMeeting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Progetto_RietiMeeting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Progetto_RietiMeeting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Progetto_RietiMeeting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,8 +419,14 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../casaaq/www" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/example/assets/www/res/generic_img" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -266,12 +450,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2488263" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24804382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -347,86 +531,98 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/example/assets/www/js/views/StructureView.js">
+    <entry file="file://$PROJECT_DIR$/example/assets/www/templates/feeds-list-item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="43" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/index.html">
+    <entry file="file://$PROJECT_DIR$/example/assets/www/js/views/AthView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" />
+        <state line="7" column="31" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/js/router.js">
+    <entry file="file://$PROJECT_DIR$/example/assets/www/templates/feeds-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="68" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/js/collections/AdCollection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/js/models/Ad.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/js/views/StructureView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/js/views/StructureView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="27" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="584" selection-end="584" vertical-scroll-proportion="0.37366548" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/js/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="68" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/js/views/StructureView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/js/collections/AdCollection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="174" selection-end="174" vertical-scroll-proportion="0.10016695" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/js/models/Ad.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="265" selection-end="265" vertical-scroll-proportion="0.22537562" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="24" selection-start="5614" selection-end="5614" vertical-scroll-proportion="0.27380952">
+        <state line="0" column="0" selection-start="0" selection-end="58" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/www/templates/ad-details.html">
+    <entry file="file://$PROJECT_DIR$/example/assets/www/templates/feed-details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="29" selection-start="364" selection-end="380" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="105" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/js/views/FeedView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1174" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/templates/structure.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="46" selection-start="642" selection-end="650" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/js/views/StructureView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="44" selection-start="618" selection-end="626" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/templates/ath-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="48" selection-start="24" selection-end="24" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/js/views/AthListItemView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="40" selection-start="841" selection-end="846" vertical-scroll-proportion="0.65108514" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/templates/aths-list-item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="11" selection-start="31" selection-end="31" vertical-scroll-proportion="0.026086956" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/templates/ath-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="31" selection-start="91" selection-end="91" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/js/collections/CompCollection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/js/models/Athlete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/js/collections/AthCollection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/js/views/AthListView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="62" selection-start="340" selection-end="340" vertical-scroll-proportion="0.2754591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/www/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="60" selection-start="1202" selection-end="1215" vertical-scroll-proportion="0.56122446">
           <folding />
         </state>
       </provider>

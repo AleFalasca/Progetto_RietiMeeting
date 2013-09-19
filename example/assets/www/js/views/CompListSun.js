@@ -5,31 +5,28 @@
  * Time: 11.03
  * To change this template use File | Settings | File Templates.
  */
-define(["jquery", "underscore", "parse", "handlebars", "views/AdListItemView", "text!templates/ad-list.html"],
-    function ($, _, Parse, Handlebars, AdListItemView, template) {
+define(["jquery", "underscore", "parse", "handlebars", "views/CompListItemView", "text!templates/sunday.html"],
+    function ($, _, Parse, Handlebars, CompListItemView, template) {
 
-        var AdListSat = Parse.View.extend({
-
+        var CompListSun = Parse.View.extend({
             tagName: "ul",
-            id: "listSat",
-
+            id: "sunday",
             template: Handlebars.compile(template),
 
-       initialize: function () {
+
+        initialize: function () {
                 this.model.bind("reset", this.render, this);
             },
-
             render: function (eventName) {
                 $(this.el).empty();
-                _.each(this.model.models, function (ad) {
-                    $(this.el).append(new AdListItemView({
-                        model: ad
+                _.each(this.model.models, function (Comp) {
+                    $(this.el).append(new CompListItemView({
+                        model: Comp
                     }).render().el);
                 }, this);
                 return this;
             }
         });
-
-        return AdListSat;
-
+        return CompListSun;
     });
+

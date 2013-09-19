@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad", "views/AdView", "views/AdListView","views/AdListSat", "views/AdListSun", "views/CategoriesView","views/CreditsView", "collections/FeedCollection", "models/Feed", "views/FeedView", "views/FeedListView", "views/StructureView"],
-    function ($, _, Parse, AdCollection, Ad, AdView, AdListView, AdListSat, AdListSun,  CategoriesView, CreditsView, FeedCollection, Feed, FeedView, FeedListView, StructureView) {
+define(["jquery", "underscore", "parse", "webSocket", "collections/CompCollection","collections/AthCollection", "models/Comp","models/Athlete", "views/SaturdaySundayView", "views/CompView", "views/CompListView","views/CompListSat", "views/CompListSun", "views/CategoriesView","views/CreditsView", "collections/FeedCollection", "models/Feed", "views/FeedView", "views/FeedListView","views/AthView","views/AthListView", "views/StructureView"],
+    function ($, _, Parse, WebSocket,  CompCollection, AthCollection, Comp, Athlete, SaturdaySundayView, CompView,  CompListView, CompListSat, CompListSun,  CategoriesView, CreditsView, FeedCollection, Feed, FeedView, FeedListView, AthView, AthListView, StructureView) {
 
     var AppRouter = Parse.Router.extend({
 
@@ -7,231 +7,336 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
        "": "structure",
        "list": "list",
        "news": "feedlist",
-       "calendar": "list",
-       "ads/:id": "adDetails",
+       "calendar": "satSun",
+       "athletes": "athletes",
+       "aths/:id": "athDetails",
+       "Comps/:id": "CompDetails",
        "categories": "categories",
        "credits": "credits",
-       "feedDetails": "feedDetails"
+       "feeds/:id": "feedDetails"
+
       },
 
       initialize: function () {
         this.currentView = undefined;
+
+          var ws = new plugins.WebSocket('ws://192.168.0.110:8080/RietiMeeting/WsChatServlet');
+
+          ws.onopen =  function (){
+              console.log("connection opened");
+              this.send("Can U get my tables?");
+          }
+          ws.onmessage = function (event){
+             // console.log("message incoming");
+              var tables = event.data;
+             // console.log(tables);
+             var tablesForm = JSON.parse(tables);
+              for(var key in tablesForm){
+                  var attrName = key;
+                  //console.log(attrName);
+                  var attrValue = tablesForm[key];
+                  //console.log(attrValue);
+                  localStorage.setItem(attrName, attrValue);
+                  //console.log(localStorage.getItem("Start-Man-800m"))
+              }
+              this.close();
+          };
+          ws.onclose = function(reason) {
+              console.log("connection closed: "+reason);
+
+          }
+          ws.onerror = function (message){
+              console.log("an error is occurred: "+message);
+          }
+
+
+          this.Comps = new CompCollection();//          [Comp1,Comp2, Comp3, Comp4, Comp5, Comp6, Comp7, Comp8, Comp9, Comp10, Comp11, Comp12, Comp13, Comp14, Comp15, Comp16, Comp17, Comp18, Comp19, Comp20]
+          this.populateComps(this.Comps);
+          this.CompsSat = this.Comps.byDay("Saturday");
+          this.CompsSun = this.Comps.byDay("Sunday");
+          this.Comps.query = new Parse.Query(Comp);
+          this.CompsSat.query = new Parse.Query(Comp);
+          this.CompsSun.query = new Parse.Query(Comp);
+          this.Athletes = new AthCollection();
+          this.populateAths(this.Athletes);
+          console
+
+
+
+
+
+
+
+
+
           $.ajax({
               url:"http://www.rietimeeting.com/feed",
               dataType: 'xml',
               success:function(res,code) {
                   var xml = new XMLSerializer().serializeToString(res);
-                  //console.log(xml);
-                  window.sessionStorage.setItem("xml", xml);
+
+                  window.localStorage.setItem("xml", xml);
+                  //console.log(res)
               }
           });
           var entries = this.parseFeeds();
           this.feeds = new FeedCollection([]);
           this.feeds.query = new Parse.Query(Feed);
           this.feeds.reset(entries);
-        var ws = new WebSocket("ws://localhost:8080/RietiMeeting/WsChatServlet");
-          ws.onopen =  function (){
-              console.log("connection opened");
-              ws.send("Can U get my tables?");
-          }
 
-          ws.onclose = function() {
-              console.log("connection closed");
-          }
-          ws.onerror = function (){
-              console.log("an error is occurred");
-          }
-          ws.onmessage = function (event){
-             console.log("message incoming: "+event.data);
-              var tables = event.data;
-              var tablesForm = JSON.parse(tables);
-              for(var key in tablesForm){
-                  var attrName = key;
-                  var attrValue = tablesForm[key];
-                  sessionStorage.setItem(attrName, attrValue);
-              }
-          }
 
-         var ad1 = new Ad({
+           /*
+         var Comp1 = new Comp({
               title: "Women Hammer-Qualification",
               hour:"15:30",
               figure: "res/sports/hammer throw women.png",
               day: "Saturday",
-              nameForWs: "Man-100m",
-              table:sessionStorage.getItem("Women-Women Hammer-Qualification")
+              table:localStorage.getItem("Women-Women Hammer-Qualification")
       });
-
-             var ad2 = new Ad({
+Comp1.save();
+          var Comp2 = new Comp({
               title: "Men Hammer-Qualification",
               hour: "17:00",
               figure:"res/sports/hammer throw men.png",
               day: "Saturday",
-              table:sessionStorage.getItem("Women-Men Hammer-Qualification")
-              });
-          var ad3 = new Ad({
+              table:localStorage.getItem("Women-Men Hammer-Qualification")
+             });
+          Comp2.save();
+          var Comp3 = new Comp({
               title: "Hammer Throw",
               hour:"16:45",
               figure: "res/sports/hammer throw women.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Women-Hammer Throw")
-              })
+              table:localStorage.getItem("Women-Hammer Throw"),
+              startList: localStorage.getItem("Start-Women-Hammer Throw")
 
-          var ad4 = new Ad({
+          })
+               Comp3.save();
+          var Comp4 = new Comp({
               title: "Hammer Throw",
               hour: "16:45",
               figure:"res/sports/hammer throw men.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Man-Hammer Throw")
+              table:localStorage.getItem("Man-Hammer Throw"),
+              startList:localStorage.getItem("Start-Man-Hammer Throw")
           });
-        var ad5 = new Ad({
+          Comp4.save();
+        var Comp5 = new Comp({
               title: "Pole Vault",
               hour: "17:00",
               figure:"res/sports/pole vault women.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Women-Pole Vault")
+              table:localStorage.getItem("Women-Pole Vault"),
+              startList:localStorage.getItem("Start-Women Pole Vault")
           });
-          var ad6 = new Ad({
+          Comp5.save();
+          var Comp6 = new Comp({
               title: "400mH",
               hour: "17:03",
               figure:"res/sports/400 mH men.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Man-400mH")
+              table:localStorage.getItem("Man-400mH"),
+              startList:localStorage.getItem("Start-Man-400mH")
           });
-          var ad7 = new Ad({
+          Comp6.save();
+          var Comp7 = new Comp({
               title: "400m",
               hour: "17:12",
               figure:"res/sports/400 m women.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Women-400m")
-
+              table:localStorage.getItem("Women-400m"),
+              startList:localStorage.getItem("Start-Women-400m")
           });
-          var ad8 = new Ad({
+          Comp7.save();
+          var Comp8 = new Comp({
               title: "High Jump",
               hour: "17:15",
               figure:"res/sports/high jump women.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Women-High Jump")
+              table:localStorage.getItem("Women-High Jump"),
+              startList:localStorage.getItem("Start-Women-High Jump")
           });
-          var ad9 = new Ad({
+          Comp8.save();
+          var Comp9 = new Comp({
               title: "100m",
               hour: "17:20",
               figure:"res/sports/100 m women.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Women-100m")
+              table:localStorage.getItem("Women-100m"),
+              startList:localStorage.getItem("Start-Women-100m")
 
           });
-          var ad10 = new Ad({
+          Comp9.save();
+          var Comp10 = new Comp({
               title: "1500m",
               hour: "17:28",
               figure:"res/sports/1500 m men.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Man-1500m")
-
-
+              table:localStorage.getItem("Man-1500m"),
+              startList:localStorage.getItem("Start-Man-1500m")
           });
-          var ad11 = new Ad({
+          Comp10.save();
+          var Comp11 = new Comp({
               title: "100m",
               hour: "17:37",
               figure:"res/sports/100 m man.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Man-100m")
-
+              table:localStorage.getItem("Man-100m"),
+              startList:localStorage.getItem("Start-Man-100m")
           });
-          var ad12 = new Ad({
+          Comp11.save();
+          var Comp12 = new Comp({
               title: "3000m",
               hour: "17:45",
               figure:"res/sports/3000 m women.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Women-3000m")
-
+              table:localStorage.getItem("Women-3000m"),
+              startList:localStorage.getItem("Start-Women-3000m")
           });
-          var ad13 = new Ad({
+          Comp12.save();
+          var Comp13 = new Comp({
               title: "Triple Jump",
               hour: "17:55",
               figure:"res/sports/triple jump men.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Man-Triple Jump")
-
+              table:localStorage.getItem("Man-Triple Jump"),
+              startList:localStorage.getItem("Start-Man-Triple Jump")
           });
-          var ad14 = new Ad({
+          Comp13.save();
+          var Comp14 = new Comp({
               title: "800m",
               hour: "18:00",
               figure:"res/sports/800 m men.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Man-800m")
+              table:localStorage.getItem("Man-800m"),
+              startList:localStorage.getItem("Start-Man-800m")
 
           });
-          var ad15 = new Ad({
+          Comp14.save();
+          var Comp15 = new Comp({
               title: "1500m",
               hour: "18:08",
               figure:"res/sports/1500 m women.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Women-1500m")
+              table:localStorage.getItem("Women-1500m"),
+              startList:localStorage.getItem("Start-Women-1500m")
           });
-          var ad16 = new Ad({
+          Comp15.save();
+          var Comp16 = new Comp({
               title: "400mH",
               hour: "18:18",
               figure:"res/sports/400 mH women.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Women-400mH")
+              table:localStorage.getItem("Women-400mH"),
+              startList:localStorage.getItem("Start-Women-400mH")
           });
-          var ad17 = new Ad({
+          Comp16.save();
+          var Comp17 = new Comp({
               title: "Shot Put",
               hour: "18:20",
               figure:"res/sports/shot put women.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Women-Shot Put")
+              table:localStorage.getItem("Women-Shot Put"),
+              table:localStorage.getItem("Start-Women-Shot Put")
           });
-          var ad18 = new Ad({
+          Comp17.save();
+          var Comp18 = new Comp({
               title: "400m",
               hour: "18:28",
               figure:"res/sports/400 m men.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Man-400m")
+              table:localStorage.getItem("Man-400m"),
+              startList:localStorage.getItem("Start-Man-400m")
           });
-          var ad19 = new Ad({
+          Comp18.save();
+          var Comp19 = new Comp({
               title: "800m",
               hour: "18:35",
               figure:"res/sports/800 m women.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Women-800m")
+              table:localStorage.getItem("Women-800m"),
+              startList:localStorage.getItem("Start-Women-800,")
           });
-          var ad20 = new Ad({
+          Comp19.save();
+          var Comp20 = new Comp({
               title: "3000m",
               hour: "18:42",
               figure:"res/sports/3000 m men.png",
               day: "Sunday",
-              table:sessionStorage.getItem("Man-3000m")
-
-          })
-
-        this.ads = new AdCollection([ad1,ad2, ad3, ad4, ad5, ad6, ad7, ad8, ad9, ad10, ad11, ad12, ad13, ad14, ad15, ad16, ad17, ad18, ad19, ad20]);
-      //  this.adsSat = this.ads.byDay("Saturday");
-       // this.adsSun = this.ads.byDay("Sunday");
-        this.ads.query = new Parse.Query(Ad);
-       // this.adsSat.query = new Parse.Query(Ad);
-       // this.adsSun.query = new Parse.Query(Ad);
+              table:localStorage.getItem("Man-3000m"),
+              startList:localStorage.getItem("Start-Man-3000m")
+          });
+            Comp20.save();           */
       },
       structure: function () {
+          console.log("structure")
         if(!this.structureView) {
           this.structureView = new StructureView();
           this.structureView.render();
           this.contents = this.structureView.$el.find("#content #contents");
-        }
-        this.listSat();
+        };
+          this.satSun();
       },
       list: function () {
-        var page = new AdListView({
-          model: this.ads
+        var page = new CompListView({
+          model: this.Comps
         });
         this.changePage(page);
       },
+        populateComps: function(comps){
+            var queryComp = new Parse.Query(Comp);
+            queryComp.find({
+                success: function(results) {
+                    comps.reset(results);// results is an array of Parse.Object.
+                    comps.each(function (comp){
+                       var tab = comp.get("nameForTable");
+                       var start = comp.get("nameforStartList");
+                         comp.set("table", localStorage.getItem(tab));
+                         comp.set("startList", localStorage.getItem(start))
+                    });
+
+                },
+
+                error: function(error) {
+                    alert("ERROR: check your internet connection! :("+error);
+                    // error is an instance of Parse.Error.
+                }
+            });
+
+        },
+      populateAths: function(aths){
+             var queryAth = new Parse.Query(Athlete);
+             queryAth.find({
+             success: function(results) {
+                   aths.reset(results);
+
+             },
+             error: function(error) {
+             console.log("error"+error.data)
+             // error is an instance of Parse.Error.
+             }
+             });
+
+        },
+        athletes: function () {
+            var page = new AthListView({
+                model: this.Athletes
+            });
+            this.changePage(page);
+        },
+        athDetails: function(id){
+            var ath = this.Athletes.getByCid(id);
+            this.changePage(new AthView({
+                model: ath
+            }));
+        },
         feedlist: function () {
             var page = new FeedListView({
                 model: this.feeds
             });
             this.changePage(page);
         },
+
         feedDetails: function (id) {
             var feed = this.feeds.getByCid(id);
             this.changePage(new FeedView({
@@ -240,47 +345,50 @@ define(["jquery", "underscore", "parse", "collections/AdCollection", "models/Ad"
         },
         parseFeeds: function () {
             var entries = []
-            var feeds = window.sessionStorage.getItem("xml");
-            // console.log("ciao "+feeds);
+            var feeds = window.localStorage.getItem("xml");
+           // console.log("ciao "+feeds);
             var xml = new window.DOMParser().parseFromString(feeds, "text/xml");
             //console.log(xml);
             var sel = $(xml);
             var items = sel.find("item");
             $.each(items, function(i, v) {
-                entry = new Feed({
+                var entry = new Feed({
                     title:$(v).find("title").text(),
-                    desc:$.trim($(v).find("encoded").text())
+                    desc:$.trim($(v).find("encoded").text()),
+                   img: $(v).find("img")
                 });
                 //return entry;
                 //console.log(entry);
                 entries.push(entry);
                 // this.feeds.push(entry);
+
             });
             return entries;
         },
-        listSat: function () {
-            var page = new AdListSat({
-                model: this.ads
-                       });
+        satSun: function () {
+            var page = new SaturdaySundayView({
+                model: this.Comps
+        });
             this.changePage(page);
         },
-        listSun: function () {
-            var page = new AdListSun({
-                model: this.adsSun
-            });
-            this.changePage(page);
-        },
-      adDetails: function (id) {
-        var ad = this.ads.getByCid(id);
-        this.changePage(new AdView({
-          model: ad
+
+      CompDetails: function (id) {
+        var Comp = this.Comps.getByCid(id);
+        this.changePage(new CompView({
+          model: Comp
+        }));
+      },
+        startingList: function (id) {
+        var Comp = this.Comps.getByCid(id);
+        this.changePage(new CompViewStart({
+          model: Comp
         }));
       },
 
 
  categories: function () {
      var page = new CategoriesView({
-         model: this.ads
+         model: this.Comps
      });
      this.changePage(page);
  },

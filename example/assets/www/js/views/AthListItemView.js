@@ -1,4 +1,4 @@
-define(["jquery", "underscore", "parse", "handlebars", "text!templates/feeds-list-item.html"],
+define(["jquery", "underscore", "parse", "handlebars", "text!templates/aths-list-item.html"],
     function ($, _, Parse, Handlebars, template) {
 
         var AdListItemView = Parse.View.extend({
@@ -24,7 +24,7 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/feeds-lis
             },
 
             goToDetails: function () {
-                Parse.history.navigate("feeds/" + this.model.cid, {trigger: true});
+                Parse.history.navigate("aths/" + this.model.cid, {trigger: true});
             }
         });
 

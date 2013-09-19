@@ -1,10 +1,10 @@
 define(["jquery", "underscore", "parse", "handlebars", "views/FeedListItemView", "text!templates/feeds-list.html"],
     function ($, _, Parse, Handlebars, FeedListItemView, template) {
 
-    var AdListView = Parse.View.extend({
+    var FeedListView = Parse.View.extend({
 
         tagName: "ul",
-        id: "list",
+        id: "feeds",
 
         template: Handlebars.compile(template),
 
@@ -21,6 +21,6 @@ define(["jquery", "underscore", "parse", "handlebars", "views/FeedListItemView",
         }
       });
 
-    return AdListView;
+    return FeedListView;
 
   });

@@ -3,7 +3,8 @@ define(["jquery", "underscore", "parse"],
     var Ad = Parse.Object.extend("Ad", {
       defaults: {
       	title: undefined,
-      	desc: undefined
+      	desc: undefined,
+        img: undefined
       }
 
       });

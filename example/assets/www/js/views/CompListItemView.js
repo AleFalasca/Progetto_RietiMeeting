@@ -1,7 +1,7 @@
-define(["jquery", "underscore", "parse", "handlebars", "text!templates/feeds-list-item.html"],
+define(["jquery", "underscore", "parse", "handlebars", "text!templates/comp-list-item.html"],
     function ($, _, Parse, Handlebars, template) {
 
-        var AdListItemView = Parse.View.extend({
+        var CompListItemView = Parse.View.extend({
 
             tagName: "li",
 
@@ -17,17 +17,17 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/feeds-lis
             },
 
             render: function (eventName) {
-                var ad = this.model.toJSON();
-                ad.cid = this.model.cid;
-                $(this.el).html(this.template(ad));
+                var Comp = this.model.toJSON();
+                Comp.cid = this.model.cid;
+                $(this.el).html(this.template(Comp));
                 return this;
             },
 
             goToDetails: function () {
-                Parse.history.navigate("feeds/" + this.model.cid, {trigger: true});
+                Parse.history.navigate("Comps/" + this.model.cid, {trigger: true});
             }
         });
 
-        return AdListItemView;
+        return CompListItemView;
 
     });

@@ -7,6 +7,7 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/structure
 
         events: {
           "touchend #calendar": "goCalendar",
+            "touchend #atlethes": "goAthletes",
           "touchend #news": "goNews",
           "touchend #categories": "goCategories",
           "touchend #credits": "goCredits"
@@ -17,6 +18,9 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/structure
         goBack: function () {
           window.history.back();
 
+        },
+        goAthletes: function() {
+            Parse.history.navigate("athletes", {trigger: true})
         },
         goNews: function () {
             Parse.history.navigate("news", {trigger: true});
@@ -35,11 +39,11 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/structure
 
 
         render: function () {
-          this.title = "IAAF World Challenge - Rieti 2012 - Meeting #42";
+          this.title = "IAAF World Challenge - Rieti 2013 - Meeting #43";
           $(this.el).html(this.template({"title": this.title}));
           $('body').append($(this.el));
           return this;
-        },
+        }
 
       });
     return StructureView;

@@ -24,6 +24,8 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/feed-deta
             htmlObject.innerHTML = desc;
             console.log(htmlObject.innerHTML);
             $(htmlObject.innerHTML).appendTo(this.el);
+            $(this.el).append('<div id="social">       <a href="#"><img id="facebook" src="res/generic_img/facebook.png" /></a>    <a href="https://twitter.com/intent/tweet"><img  id="twitter" src="res/generic_img/twitter.png" /></a></div>            ');
+            $(this.el).append('<button id="back">back</button>');
             return this;
         }
       });

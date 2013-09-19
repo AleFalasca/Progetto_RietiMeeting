@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "parse", "handlebars", "views/AdListItemView", "text!templates/cat-list.html"],
-    function ($, _, Parse, Handlebars, AdListItemView, template) {
+define(["jquery", "underscore", "parse", "handlebars", "views/CompListItemView", "text!templates/cat-list.html"],
+    function ($, _, Parse, Handlebars, CompListItemView, template) {
 
         var CategoriesView = Parse.View.extend({
 
@@ -14,9 +14,9 @@ define(["jquery", "underscore", "parse", "handlebars", "views/AdListItemView", "
 
             render: function (eventName) {
                 $(this.el).empty();
-                _.each(this.model.models, function (ad) {
-                    $(this.el).append(new AdListItemView({
-                        model: ad
+                _.each(this.model.models, function (Comp) {
+                    $(this.el).append(new CompListItemView({
+                        model: Comp
                     }).render().el);
                 }, this);
                 return this;

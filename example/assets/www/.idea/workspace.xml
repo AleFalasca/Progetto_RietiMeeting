@@ -4,25 +4,25 @@
     <list default="true" id="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" name="Default" comment="" />
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/CategoriesView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1372687171552" ignored="false" />
-    <file path="/router.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377733896783" ignored="false" />
+    <file path="/CategoriesView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378569055379" ignored="false" />
+    <file path="/router.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379350250115" ignored="false" />
     <file path="/structure.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373877083084" ignored="false" />
     <file path="/StructureView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373034293976" ignored="false" />
-    <file path="/credits.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373532643122" ignored="false" />
+    <file path="/credits.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378481708429" ignored="false" />
     <file path="/CreditsView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373530347693" ignored="false" />
-    <file path="/style.css" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377872572780" ignored="false" />
-    <file path="/ad-details.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377076409354" ignored="false" />
-    <file path="/AdView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377077187856" ignored="false" />
-    <file path="/Ad.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377076005371" ignored="false" />
+    <file path="/style.css" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379341669754" ignored="false" />
+    <file path="/ad-details.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378201535381" ignored="false" />
+    <file path="/AdView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379341979047" ignored="false" />
+    <file path="/Ad.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378193852259" ignored="false" />
     <file path="/PhotofinishView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373964911651" ignored="false" />
     <file path="/require.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1372691519728" ignored="false" />
     <file path="/photofinish.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373965008375" ignored="false" />
     <file path="/Credits.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1372695571350" ignored="false" />
     <file path="/news.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1376057536936" ignored="false" />
-    <file path="/ad-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374484114838" ignored="false" />
-    <file path="/cat-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377872388196" ignored="false" />
+    <file path="/ad-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378116974009" ignored="false" />
+    <file path="/cat-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378123617306" ignored="false" />
     <file path="/NewsView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1375019237525" ignored="false" />
-    <file path="/main.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1375019434506" ignored="false" />
+    <file path="/main.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379349594684" ignored="false" />
     <file path="$PROJECT_DIR$/lib/cordova/cordova-2.6.0.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373530060580" ignored="false" />
     <file path="/CreditsView.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373530237274" ignored="false" />
     <file path="/FeedItem.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373537518046" ignored="false" />
@@ -35,6 +35,26 @@
     <file path="/df.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1374943073404" ignored="false" />
     <file path="/feeds-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377731855562" ignored="false" />
     <file path="/load.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377733593326" ignored="false" />
+    <file path="/AdListViewByDay.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377875715381" ignored="false" />
+    <file path="/FeedListItemView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377897371473" ignored="false" />
+    <file path="/FeedListView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377895941009" ignored="false" />
+    <file path="/AdListItemView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377897400713" ignored="false" />
+    <file path="/feeds-list-item.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1377897202791" ignored="false" />
+    <file path="/SaturdaySundayView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378569154995" ignored="false" />
+    <file path="/saturday.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378122649782" ignored="false" />
+    <file path="/sunday.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378122699244" ignored="false" />
+    <file path="/ad-list-item.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378154749464" ignored="false" />
+    <file path="/feed-details.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378155133400" ignored="false" />
+    <file path="/ad-details-start.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378197619021" ignored="false" />
+    <file path="/AdViewStart.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378197850062" ignored="false" />
+    <file path="/Athlete.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378203936920" ignored="false" />
+    <file path="/FeedView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378481249278" ignored="false" />
+    <file path="/Comp.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379347542722" ignored="false" />
+    <file path="/comp-details.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379341433811" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../git/Progetto_RietiMeeting/example/assets/www/js/router.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379341952706" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../git/Progetto_RietiMeeting/example/assets/www/js/views/AdView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379341983662" ignored="false" />
+    <file path="/CompCollection.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379344991413" ignored="false" />
+    <file path="/CompView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379347008216" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +74,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdListView.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/views/AdListView.js">
+      <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="54" selection-start="728" selection-end="728" vertical-scroll-proportion="0.65108514">
+            <state line="17" column="54" selection-start="953" selection-end="953" vertical-scroll-proportion="0.4329897">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="46" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,22 +102,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/templates/news.html" />
-        <option value="$PROJECT_DIR$/js/views/NewsView.js" />
-        <option value="$PROJECT_DIR$/js/models/Ad.js" />
-        <option value="$PROJECT_DIR$/templates/ad-details.html" />
-        <option value="$PROJECT_DIR$/js/views/AdListItemView.js" />
-        <option value="$PROJECT_DIR$/js/views/FeedListItemView.js" />
+        <option value="$PROJECT_DIR$/js/views/CompListItemView.js" />
+        <option value="$PROJECT_DIR$/js/views/CompListSat.js" />
+        <option value="$PROJECT_DIR$/js/views/CompListSun.js" />
+        <option value="$PROJECT_DIR$/js/views/CompListView.js" />
         <option value="$PROJECT_DIR$/js/views/AdView.js" />
-        <option value="$PROJECT_DIR$/js/views/FeedView.js" />
-        <option value="$PROJECT_DIR$/js/views/FeedListView.js" />
-        <option value="$PROJECT_DIR$/js/views/LoadingView.js" />
-        <option value="$PROJECT_DIR$/templates/load.html" />
-        <option value="$PROJECT_DIR$/js/router.js" />
-        <option value="$PROJECT_DIR$/templates/cat-list.html" />
-        <option value="$PROJECT_DIR$/templates/feeds-list.html" />
+        <option value="$PROJECT_DIR$/js/views/AdViewStart.js" />
+        <option value="$PROJECT_DIR$/js/views/CategoriesView.js" />
+        <option value="$PROJECT_DIR$/js/views/SaturdaySundayView.js" />
+        <option value="$PROJECT_DIR$/js/models/Athlete.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/comp-details.html" />
+        <option value="$PROJECT_DIR$/js/views/CompView.js" />
+        <option value="$PROJECT_DIR$/js/collections/CompCollection.js" />
+        <option value="$PROJECT_DIR$/js/models/Comp.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/router.js" />
       </list>
     </option>
   </component>
@@ -124,7 +153,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -153,7 +181,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="websocket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -168,60 +214,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collections" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -241,13 +233,14 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../casaaq/www" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../git/Progetto_RietiMeeting/example/assets/www" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -255,6 +248,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/websocket" />
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="C:\xampp\htdocs\Progetto_RietiMeeting\example\assets\www\lib\rss" />
       <recent name="C:\xampp\htdocs\Progetto_RietiMeeting\example\assets\www\res\generic_img" />
     </key>
@@ -293,16 +288,16 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2488263" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2488263" sideWeight="0.8784" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1216" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -367,112 +362,102 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/views/AdListItemView.js">
+    <entry file="file://$PROJECT_DIR$/js/views/CompListView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="73" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+        <state line="25" column="15" selection-start="732" selection-end="732" vertical-scroll-proportion="-7.352941" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/CompListItemView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="19" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/CompListSat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="19" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/CompListSun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="19" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/CompViewStart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="60" selection-start="221" selection-end="221" vertical-scroll-proportion="0.13686131" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/CategoriesView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="45" selection-start="752" selection-end="752" vertical-scroll-proportion="0.54744524" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/SaturdaySundayView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="19" selection-start="1391" selection-end="1391" vertical-scroll-proportion="1.0261682" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/Athlete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="43" selection-start="222" selection-end="222" vertical-scroll-proportion="0.12520868" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="263" column="19" selection-start="5380" selection-end="5380" vertical-scroll-proportion="-7.04">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdView.js">
+    <entry file="file://$PROJECT_DIR$/js/views/CompView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="71" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" />
+        <state line="54" column="43" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.85294116">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/FeedView.js">
+    <entry file="file://$PROJECT_DIR$/js/collections/CompCollection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="75" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" />
+        <state line="9" column="13" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/CreditsView.js">
+    <entry file="file://$PROJECT_DIR$/templates/comp-details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="160" selection-end="579" vertical-scroll-proportion="0.0" />
+        <state line="11" column="10" selection-start="412" selection-end="412" vertical-scroll-proportion="0.33066133">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/StructureView.js">
+    <entry file="file://$PROJECT_DIR$/js/models/Comp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="11" column="17" selection-start="338" selection-end="347" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/websocket/webSocket.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="48" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0882353">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="46" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="60" selection-start="1177" selection-end="1177" vertical-scroll-proportion="-1.3805461">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/FeedListItemView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="41" selection-start="753" selection-end="761" vertical-scroll-proportion="0.65108514">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/LoadingView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="75" selection-start="235" selection-end="235" vertical-scroll-proportion="0.17529215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/load.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="70" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/structure.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="70" selection-start="129" selection-end="167" vertical-scroll-proportion="0.07826087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ad-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="155" selection-end="155" vertical-scroll-proportion="0.15652174">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/FeedListView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="102" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cat-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="35" selection-end="35" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="29" selection-start="4964" selection-end="4964" vertical-scroll-proportion="3.9692833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/feeds-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="58" selection-end="58" vertical-scroll-proportion="0.07826087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdListView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="54" selection-start="728" selection-end="728" vertical-scroll-proportion="0.65108514">
+        <state line="17" column="54" selection-start="953" selection-end="953" vertical-scroll-proportion="0.4329897">
           <folding />
         </state>
       </provider>
