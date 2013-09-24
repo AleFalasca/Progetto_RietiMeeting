@@ -1,7 +1,7 @@
 define(["jquery", "underscore", "parse", "handlebars", "views/AthListItemView", "text!templates/ath-list.html"],
     function ($, _, Parse, Handlebars, AthListItemView, template) {
 
-        var FeedListView = Parse.View.extend({
+        var AthListView = Parse.View.extend({
 
             tagName: "ul",
             id: "athletes",
@@ -21,6 +21,6 @@ define(["jquery", "underscore", "parse", "handlebars", "views/AthListItemView", 
             }
         });
 
-        return FeedListView;
+        return AthListView;
 
     });

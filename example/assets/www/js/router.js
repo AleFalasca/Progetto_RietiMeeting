@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "parse", "webSocket", "collections/CompCollection","collections/AthCollection", "models/Comp","models/Athlete", "views/SaturdaySundayView", "views/CompView", "views/CompListView","views/CompListSat", "views/CompListSun", "views/CategoriesView","views/CreditsView", "collections/FeedCollection", "models/Feed", "views/FeedView", "views/FeedListView","views/AthView","views/AthListView", "views/StructureView"],
-    function ($, _, Parse, WebSocket,  CompCollection, AthCollection, Comp, Athlete, SaturdaySundayView, CompView,  CompListView, CompListSat, CompListSun,  CategoriesView, CreditsView, FeedCollection, Feed, FeedView, FeedListView, AthView, AthListView, StructureView) {
+define(["jquery", "underscore", "parse", /*"webSocket", */"collections/CompCollection","collections/AthCollection", "models/Comp","models/Athlete", "views/SaturdaySundayView", "views/CompView", "views/CompListView","views/CompListSat", "views/CompListSun", "views/CategoriesView","views/CreditsView", "collections/FeedCollection", "models/Feed", "views/FeedView", "views/FeedListView","views/AthView","views/AthListView", "views/StructureView"],
+    function ($, _, Parse,/* WebSocket, */ CompCollection, AthCollection, Comp, Athlete, SaturdaySundayView, CompView,  CompListView, CompListSat, CompListSun,  CategoriesView, CreditsView, FeedCollection, Feed, FeedView, FeedListView, AthView, AthListView, StructureView) {
 
     var AppRouter = Parse.Router.extend({
 
@@ -20,7 +20,7 @@ define(["jquery", "underscore", "parse", "webSocket", "collections/CompCollectio
       initialize: function () {
         this.currentView = undefined;
 
-          var ws = new plugins.WebSocket('ws://192.168.0.110:8080/RietiMeeting/WsChatServlet');
+          var ws = new WebSocket('ws://192.168.0.110:8080/RietiMeeting/WsChatServlet');
 
           ws.onopen =  function (){
               console.log("connection opened");
@@ -58,14 +58,8 @@ define(["jquery", "underscore", "parse", "webSocket", "collections/CompCollectio
           this.CompsSat.query = new Parse.Query(Comp);
           this.CompsSun.query = new Parse.Query(Comp);
           this.Athletes = new AthCollection();
+          this.Athletes.query = new Parse.Query(Athlete);
           this.populateAths(this.Athletes);
-          console
-
-
-
-
-
-
 
 
 
@@ -308,6 +302,7 @@ Comp1.save();
              var queryAth = new Parse.Query(Athlete);
              queryAth.find({
              success: function(results) {
+                 console.log(results)
                    aths.reset(results);
 
              },
