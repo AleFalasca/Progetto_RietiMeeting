@@ -20,7 +20,7 @@ define(["jquery", "underscore", "parse", /*"webSocket", */"collections/CompColle
       initialize: function () {
         this.currentView = undefined;
 
-          var ws = new WebSocket('ws://192.168.0.110:8080/RietiMeeting/WsChatServlet');
+          var ws = new WebSocket('ws://127.0.0.1:8080/RietiMeeting/WsChatServlet');
 
           ws.onopen =  function (){
               console.log("connection opened");
@@ -296,7 +296,7 @@ Comp1.save();
                     // error is an instance of Parse.Error.
                 }
             });
-
+          console.log("Comps populated!")
         },
       populateAths: function(aths){
              var queryAth = new Parse.Query(Athlete);
