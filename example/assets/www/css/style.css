@@ -60,6 +60,7 @@ body {
     background: -webkit-linear-gradient(top, #ff4332 0%,#f96f34 50%,#ff4332 100%); /* Chrome10+,Safari5.1+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4332', endColorstr='#ff4332',GradientType=0 ); /* IE6-9 */
     text-align: center;
+    z-index: 100;
 }
 
 #title {
@@ -201,6 +202,7 @@ body {
     color: #efefef;
     font-size: 2.6em;
     text-align: center;
+    z-index: 100;
 }
 #taskBarCredits {
     position:fixed;
@@ -286,8 +288,9 @@ body {
 #startListResults{
     display: block;
     width: 100%;
+    overflow-y: scroll;
 
-}
+}/*
 #datatableframe{
     position: absolute;
     width: 100%;
@@ -308,7 +311,7 @@ body {
     height: 44px;
     text-align: center;
     left: 50%;
-}
+}          */
 /*-----------------------------------------Resulttable-----------------------------------*/
 #resulttable {
     width: 550px;

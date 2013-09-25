@@ -40,6 +40,7 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/comp-deta
                 if (this.model.get("startList") != undefined){
                     $(this.el).append('<button id="StartingListButton">Starting List</button>')
                 }
+                $(this.el).append('<br><br><br><br>') ;
                 return this;
             },
             renderStart: function (eventName) {
@@ -55,6 +56,7 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/comp-deta
 
                 $(this.el).append(tabForm);
                 $(this.el).append('<button id="Results">Results</button>');
+                $(this.el).append('<br><br><br><br>') ;
                 return this;
             }
 
