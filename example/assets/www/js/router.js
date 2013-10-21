@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "parse",/* "webSocket",*/ "collections/CompCollection","collections/AthCollection", "models/Comp","models/Athlete", "views/SaturdaySundayView", "views/CompView", "views/CompListView","views/CompListSat", "views/CompListSun", "views/CategoriesView","views/CreditsView", "collections/FeedCollection", "models/Feed", "views/FeedView", "views/FeedListView","views/AthView","views/AthListView", "views/StructureView"],
-    function ($, _, Parse,/* WebSocket,*/ CompCollection, AthCollection, Comp, Athlete, SaturdaySundayView, CompView,  CompListView, CompListSat, CompListSun,  CategoriesView, CreditsView, FeedCollection, Feed, FeedView, FeedListView, AthView, AthListView, StructureView) {
+define(["jquery", "underscore", "parse", "collections/CompCollection","collections/AthCollection", "models/Comp","models/Athlete", "views/SaturdaySundayView", "views/CompView", "views/CompListView","views/CompListSat", "views/CompListSun", "views/CategoriesView","views/CreditsView", "collections/FeedCollection", "models/Feed", "views/FeedView", "views/FeedListView","views/AthView","views/AthListView", "views/StructureView"],
+    function ($, _, Parse, CompCollection, AthCollection, Comp, Athlete, SaturdaySundayView, CompView,  CompListView, CompListSat, CompListSun,  CategoriesView, CreditsView, FeedCollection, Feed, FeedView, FeedListView, AthView, AthListView, StructureView) {
 
     var AppRouter = Parse.Router.extend({
 
@@ -18,38 +18,9 @@ define(["jquery", "underscore", "parse",/* "webSocket",*/ "collections/CompColle
       },
 
       initialize: function () {
-        this.currentView = undefined;
-
-          var ws = new WebSocket('ws://10.150.52.243:8080/RietiMeeting/WsChatServlet');
-
-          ws.onopen =  function (){
-              console.log("connection opened");
-              this.send("Can U get my tables?");
-          }
-          ws.onmessage = function (event){
-             // console.log("message incoming");
-              var tables = event.data;
-             // console.log(tables);
-             var tablesForm = JSON.parse(tables);
-              for(var key in tablesForm){
-                  var attrName = key;
-                  //console.log(attrName);
-                  var attrValue = tablesForm[key];
-                  //console.log(attrValue);
-                  localStorage.setItem(attrName, attrValue);
-                  //console.log(localStorage.getItem("Start-Man-800m"))
-              }
-              this.close();
-          };
-          ws.onclose = function(reason) {
-              console.log("connection closed: "+reason);
-
-          }
-          ws.onerror = function (message){
-              console.log("an error is occurred: "+message);
-          }
 
 
+          this.currentView = undefined;
           this.Comps = new CompCollection();//          [Comp1,Comp2, Comp3, Comp4, Comp5, Comp6, Comp7, Comp8, Comp9, Comp10, Comp11, Comp12, Comp13, Comp14, Comp15, Comp16, Comp17, Comp18, Comp19, Comp20]
           this.populateComps(this.Comps);
           this.CompsSat = this.Comps.byDay("Saturday");
@@ -59,30 +30,23 @@ define(["jquery", "underscore", "parse",/* "webSocket",*/ "collections/CompColle
           this.CompsSun.query = new Parse.Query(Comp);
           this.Athletes = new AthCollection();
           this.Athletes.query = new Parse.Query(Athlete);
+          this.Feeds = new FeedCollection();
+          this.Feeds.query = new Parse.Query(Feed);
+          this.parseFeeds(this.Feeds);
           this.populateAths(this.Athletes);
 
 
 
-          $.ajax({
-              url:"http://www.rietimeeting.com/feed",
-              dataType: 'xml',
-              success:function(res,code) {
-                  var xml = new XMLSerializer().serializeToString(res);
 
-                  window.localStorage.setItem("xml", xml);
-                  //console.log(res)
-              }
-          });
-          var entries = this.parseFeeds();
-          this.feeds = new FeedCollection([]);
-          this.feeds.query = new Parse.Query(Feed);
-          this.feeds.reset(entries);
+
+
 
 
            /*
          var Comp1 = new Comp({
               title: "Women Hammer-Qualification",
-              hour:"15:30",
+              hour:"15:30",                                   ,
+              hour:
               figure: "res/sports/hammer throw women.png",
               day: "Saturday",
               table:localStorage.getItem("Women-Women Hammer-Qualification")
@@ -277,7 +241,15 @@ Comp1.save();
         });
         this.changePage(page);
       },
-        populateComps: function(comps){
+        populateComps: function(comps, tables){
+            $.ajax({
+                url:"http://10.40.50.149:8080/RietiMeeting/meeting_data",
+                dataType:'json',
+                success: function(res, code){
+                    tables = res;
+                }
+            })
+
             var queryComp = new Parse.Query(Comp);
             queryComp.find({
                 success: function(results) {
@@ -285,10 +257,9 @@ Comp1.save();
                     comps.each(function (comp){
                        var tab = comp.get("nameForTable");
                        var start = comp.get("nameforStartList");
-                         comp.set("table", localStorage.getItem(tab));
-                         comp.set("startList", localStorage.getItem(start))
+                        comp.set("table", tables[tab]);
+                        comp.set("startList", tables[start])
                     });
-
                 },
 
                 error: function(error) {
@@ -313,6 +284,30 @@ Comp1.save();
              });
 
         },
+
+        parseFeeds:function (feeds) {
+            var URL = "http://www.rietimeeting.com/feed";
+            $.ajax({
+                url:URL,
+                success:function(res,code) {
+                    entries = [];
+                    var xml = $(res);
+                    var items = xml.find("item");
+                    $.each(items, function(i, v) {
+                        entry = new Feed({
+                            title:$(v).find("title").text(),
+                            link:$(v).find("link").text(),
+                            description:$.trim($(v).find("description").text())
+                        });
+                        entries.push(entry);
+                    });
+                    feeds.reset(entries);
+                },
+                error:function(jqXHR,status,error) {
+                    alert("NO CONNECTION!!!")
+                }
+            });
+        },
         athletes: function () {
             var page = new AthListView({
                 model: this.Athletes
@@ -327,7 +322,7 @@ Comp1.save();
         },
         feedlist: function () {
             var page = new FeedListView({
-                model: this.feeds
+                model: this.Feeds
             });
             this.changePage(page);
         },
@@ -338,28 +333,7 @@ Comp1.save();
                 model: feed
             }));
         },
-        parseFeeds: function () {
-            var entries = []
-            var feeds = window.localStorage.getItem("xml");
-           // console.log("ciao "+feeds);
-            var xml = new window.DOMParser().parseFromString(feeds, "text/xml");
-            //console.log(xml);
-            var sel = $(xml);
-            var items = sel.find("item");
-            $.each(items, function(i, v) {
-                var entry = new Feed({
-                    title:$(v).find("title").text(),
-                    desc:$.trim($(v).find("encoded").text()),
-                   img: $(v).find("img")
-                });
-                //return entry;
-                //console.log(entry);
-                entries.push(entry);
-                // this.feeds.push(entry);
 
-            });
-            return entries;
-        },
         satSun: function () {
             var page = new SaturdaySundayView({
                 model: this.Comps

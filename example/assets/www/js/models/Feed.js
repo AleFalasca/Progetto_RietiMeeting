@@ -4,7 +4,7 @@ define(["jquery", "underscore", "parse"],
       defaults: {
       	title: undefined,
       	desc: undefined,
-        img: undefined
+        link: undefined
       }
 
       });

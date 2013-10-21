@@ -1,12 +1,12 @@
 require.config({
   paths: {
     jquery: '../lib/jquery/zepto',
+    jquerymobile: '../lib/jquery/jquery.mobile-1.3.2.min',
     underscore: '../lib/underscore/underscore-min',
     parse: "../lib/parse/parse-1.2.9.min",
     text: '../lib/require/text-1.0.6',
     async: '../lib/require/async',
     handlebars: '../lib/handlebars/handlebars',
-    webSocket: '../lib/websocket/webSocket.min',
     templates: '../templates'
   },
   shim: {
@@ -23,9 +23,6 @@ require.config({
     'parse': {
       deps: ['jquery', 'underscore'],
       exports: 'Parse'
-    },
-    'webSocket':{
-        exports: 'WebSocket'
     }
   }
 });
