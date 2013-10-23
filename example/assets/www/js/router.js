@@ -290,6 +290,7 @@ Comp1.save();
             $.ajax({
                 url:URL,
                 success:function(res,code) {
+                    console.log(res)
                     entries = [];
                     var xml = $(res);
                     var items = xml.find("item");
@@ -297,7 +298,9 @@ Comp1.save();
                         entry = new Feed({
                             title:$(v).find("title").text(),
                             link:$(v).find("link").text(),
-                            description:$.trim($(v).find("description").text())
+                            description:$.trim($(v).find("encoded").text()),
+                            fblink:"https://www.facebook.com/sharer/sharer.php?u="+this.link,
+                            twlink:"https://twitter.com/share?source=tweetbutton&url="+this.link
                         });
                         entries.push(entry);
                     });
@@ -306,7 +309,7 @@ Comp1.save();
                 error:function(jqXHR,status,error) {
                     alert("NO CONNECTION!!!")
                 }
-            });
+            })
         },
         athletes: function () {
             var page = new AthListView({
@@ -328,7 +331,7 @@ Comp1.save();
         },
 
         feedDetails: function (id) {
-            var feed = this.feeds.getByCid(id);
+            var feed = this.Feeds.getByCid(id);
             this.changePage(new FeedView({
                 model: feed
             }));

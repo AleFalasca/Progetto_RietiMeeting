@@ -185,6 +185,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    border-bottom: solid 3px #ff4332 ;
+
 }
 #adDetails{
 margin-top: 60px;
@@ -203,7 +205,6 @@ margin-top: 60px;
     height: 30px;
 }
 #navBar>a:hover{
-    color: #ff4332;
     border-bottom: solid 5px #ff4332 ;
 }
 
@@ -267,29 +268,10 @@ margin-top: 60px;
     display: block;
     width: 100%;
     overflow-y: scroll;
-
-}/*
-#datatableframe{
-    position: absolute;
-    width: 100%;
-    top:50%;
-    left:50%;
-    color: graytext;
-    font-weight: bold;
 }
 #datatable_row_1{
     width: 100%;
-    height: 44px;
-    background-color: #cecece;
-    text-align: center;
-    left: 50%;
 }
-#datatable_row_2{
-    width: 100%;;
-    height: 44px;
-    text-align: center;
-    left: 50%;
-}          */
 /*-----------------------------------------Resulttable-----------------------------------*/
 #resulttable {
     width: 550px;

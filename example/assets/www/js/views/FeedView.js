@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "parse", "handlebars", "text!templates/feed-details.html"],
-    function ($, _, Parse, Handlebars, template) {
+define(["jquery", "underscore", "parse", "share", "handlebars", "text!templates/feed-details.html"],
+    function ($, _, Parse, Share, Handlebars, template) {
 
     var AdView = Parse.View.extend({
 
@@ -8,7 +8,9 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/feed-deta
         id: "feedContent",
 
         events: {
-            "touchend #back": "goBack"
+            "touchend #back": "goBack",
+            "touchend #facebook": "facebook",
+            "touchend #twitter": "twitter"
         },
 
         template: Handlebars.compile(template),
@@ -16,16 +18,31 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/feed-deta
         goBack: function () {
             window.history.back();
         },
+        facebook: function (){
+            var share = new Share;
+            share.show({
+                    subject: 'posted from RietiMeeting Android app',
+                    text: this.model.get("link")
+                },
+                function() {}, // Success function
+                function() {alert('Share failed')} // Failure function
+            );
+        },
+
+        twitter: function(){
+            var url = "https://twitter.com/share?source=tweetbutton&url=myurl"+this.model.get("link");
+            console.log(url);
+            window.open(url, '_blank');
+            return true;
+        },
+
 
         render: function (eventName) {
             $(this.el).html(this.template(this.model.toJSON()));
-            var desc = this.model.get("desc");
+            var desc = this.model.get("description");
             var htmlObject = document.createElement('p');
             htmlObject.innerHTML = desc;
-            console.log(htmlObject.innerHTML);
             $(htmlObject.innerHTML).appendTo(this.el);
-            $(this.el).append('<div id="social">       <a href="#"><img id="facebook" src="res/generic_img/facebook.png" /></a>    <a href="https://twitter.com/intent/tweet"><img  id="twitter" src="res/generic_img/twitter.png" /></a></div>            ');
-            $(this.el).append('<button id="back">back</button>');
             return this;
         }
       });

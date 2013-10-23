@@ -1,12 +1,12 @@
 require.config({
   paths: {
     jquery: '../lib/jquery/zepto',
-    jquerymobile: '../lib/jquery/jquery.mobile-1.3.2.min',
     underscore: '../lib/underscore/underscore-min',
     parse: "../lib/parse/parse-1.2.9.min",
     text: '../lib/require/text-1.0.6',
     async: '../lib/require/async',
     handlebars: '../lib/handlebars/handlebars',
+    share: '../lib/cordova/share',
     templates: '../templates'
   },
   shim: {
@@ -19,7 +19,9 @@ require.config({
     'handlebars': {
       exports: 'Handlebars'
     },
-
+   'share': {
+     exports: 'Share'
+   },
     'parse': {
       deps: ['jquery', 'underscore'],
       exports: 'Parse'
