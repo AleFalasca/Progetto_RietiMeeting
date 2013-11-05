@@ -1,5 +1,5 @@
-define(["jquery", "underscore", "parse", "collections/CompCollection","collections/AthCollection", "models/Comp","models/Athlete", "views/SaturdaySundayView", "views/CompView", "views/CompListView","views/CompListSat", "views/CompListSun", "views/CategoriesView","views/CreditsView", "collections/FeedCollection", "models/Feed", "views/FeedView", "views/FeedListView","views/AthView","views/AthListView", "views/StructureView"],
-    function ($, _, Parse, CompCollection, AthCollection, Comp, Athlete, SaturdaySundayView, CompView,  CompListView, CompListSat, CompListSun,  CategoriesView, CreditsView, FeedCollection, Feed, FeedView, FeedListView, AthView, AthListView, StructureView) {
+define(["jquery", "underscore", "parse", "collections/CompCollection","collections/AthCollection", "models/Comp","models/Athlete", "views/SaturdaySundayView", "views/CompView", "views/CompViewStart", "views/CompListView","views/CompListSat", "views/CompListSun", "views/CategoriesView","views/CreditsView", "collections/FeedCollection", "models/Feed", "views/FeedView", "views/FeedListView","views/AthView","views/AthListView", "views/StructureView"],
+    function ($, _, Parse, CompCollection, AthCollection, Comp, Athlete, SaturdaySundayView, CompView, CompViewStart,  CompListView, CompListSat, CompListSun,  CategoriesView, CreditsView, FeedCollection, Feed, FeedView, FeedListView, AthView, AthListView, StructureView) {
 
     var AppRouter = Parse.Router.extend({
 
@@ -13,7 +13,8 @@ define(["jquery", "underscore", "parse", "collections/CompCollection","collectio
        "Comps/:id": "CompDetails",
        "categories": "categories",
        "credits": "credits",
-       "feeds/:id": "feedDetails"
+       "feeds/:id": "feedDetails",
+       "start": "start"
 
       },
 
@@ -23,6 +24,7 @@ define(["jquery", "underscore", "parse", "collections/CompCollection","collectio
           this.currentView = undefined;
           this.Comps = new CompCollection();//          [Comp1,Comp2, Comp3, Comp4, Comp5, Comp6, Comp7, Comp8, Comp9, Comp10, Comp11, Comp12, Comp13, Comp14, Comp15, Comp16, Comp17, Comp18, Comp19, Comp20]
           this.populateComps(this.Comps);
+          //console.log(tables);
           this.CompsSat = this.Comps.byDay("Saturday");
           this.CompsSun = this.Comps.byDay("Sunday");
           this.Comps.query = new Parse.Query(Comp);
@@ -241,33 +243,37 @@ Comp1.save();
         });
         this.changePage(page);
       },
-        populateComps: function(comps, tables){
-            $.ajax({
-                url:"http://10.40.50.149:8080/RietiMeeting/meeting_data",
-                dataType:'json',
-                success: function(res, code){
-                    tables = res;
-                }
-            })
-
+        populateComps: function(comps){
+          var tables = undefined;
             var queryComp = new Parse.Query(Comp);
             queryComp.find({
                 success: function(results) {
                     comps.reset(results);// results is an array of Parse.Object.
-                    comps.each(function (comp){
-                       var tab = comp.get("nameForTable");
-                       var start = comp.get("nameforStartList");
-                        comp.set("table", tables[tab]);
-                        comp.set("startList", tables[start])
-                    });
+
                 },
 
                 error: function(error) {
-                    alert("ERROR: check your internet connection! :("+error);
+                    alert("ERROR: check your internet connection! :(");
                     // error is an instance of Parse.Error.
                 }
             });
-          console.log("Comps populated!")
+            console.log("Comps populated!");
+            $.ajax({
+                url:"http://127.0.0.1:8080/RietiMeeting/meeting_data",
+                dataType:'json',
+                success: function(res, code){
+                    //console.log(res);
+                    tables = res;
+                    comps.each(function (comp){
+                        var tab = comp.get("nameForTable");
+                        var start = comp.get("nameforStartList");
+                        comp.set("table", tables[tab]);
+                        comp.set("startList", tables[start])
+                    });
+                   // console.log(tables);
+                }
+            });
+
         },
       populateAths: function(aths){
              var queryAth = new Parse.Query(Athlete);
@@ -350,13 +356,12 @@ Comp1.save();
           model: Comp
         }));
       },
-        startingList: function (id) {
-        var Comp = this.Comps.getByCid(id);
-        this.changePage(new CompViewStart({
-          model: Comp
-        }));
-      },
-
+        start: function () {
+            var Comp = this.Comps.getByCid(id);
+            this.changePage(new CompViewStart({
+                model: Comp
+            }));
+        },
 
  categories: function () {
      var page = new CategoriesView({

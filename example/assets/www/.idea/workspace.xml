@@ -5,7 +5,7 @@
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/CategoriesView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378569055379" ignored="false" />
-    <file path="/router.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1382454836834" ignored="false" />
+    <file path="/router.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1382956880551" ignored="false" />
     <file path="/structure.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373877083084" ignored="false" />
     <file path="/StructureView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1373034293976" ignored="false" />
     <file path="/credits.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378481708429" ignored="false" />
@@ -49,13 +49,14 @@
     <file path="/Athlete.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1378203936920" ignored="false" />
     <file path="/FeedView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1382525367860" ignored="false" />
     <file path="/Comp.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379347542722" ignored="false" />
-    <file path="/comp-details.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379341433811" ignored="false" />
+    <file path="/comp-details.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1382957311037" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../git/Progetto_RietiMeeting/example/assets/www/js/router.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379341952706" ignored="false" />
     <file path="$PROJECT_DIR$/../../../../git/Progetto_RietiMeeting/example/assets/www/js/views/AdView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379341983662" ignored="false" />
     <file path="/CompCollection.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379344991413" ignored="false" />
-    <file path="/CompView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1379347008216" ignored="false" />
+    <file path="/CompView.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1382956749342" ignored="false" />
     <file path="/comp-list.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1381931549346" ignored="false" />
     <file path="/Feed.js" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1382452813769" ignored="false" />
+    <file path="/comp-details-start.html" changelist="d55c4e9f-8e8b-44f8-a9f2-3d795abdd55e" time="1382957511323" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,10 +76,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FeedView.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FeedView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/views/FeedView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="28" selection-start="791" selection-end="791" vertical-scroll-proportion="0.2654424">
+            <state line="28" column="23" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/views/CompView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="29" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StructureView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/views/StructureView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="62" selection-start="629" selection-end="644" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompViewStart.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/views/CompViewStart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="193" column="38" selection-start="7517" selection-end="7517" vertical-scroll-proportion="0.026548672">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comp-details-start.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/comp-details-start.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="43" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comp-details.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/comp-details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="58" selection-start="0" selection-end="524" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -94,22 +149,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/views/AdViewStart.js" />
         <option value="$PROJECT_DIR$/js/views/CategoriesView.js" />
         <option value="$PROJECT_DIR$/js/models/Athlete.js" />
-        <option value="$PROJECT_DIR$/templates/comp-details.html" />
-        <option value="$PROJECT_DIR$/js/views/CompView.js" />
         <option value="$PROJECT_DIR$/js/collections/CompCollection.js" />
         <option value="$PROJECT_DIR$/js/models/Comp.js" />
         <option value="$PROJECT_DIR$/js/views/SaturdaySundayView.js" />
         <option value="$PROJECT_DIR$/templates/comp-list.html" />
         <option value="$PROJECT_DIR$/lib/jquery/jquery.share.js" />
         <option value="$PROJECT_DIR$/js/models/Feed.js" />
-        <option value="$PROJECT_DIR$/js/router.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/templates/feed-details.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/views/FeedView.js" />
+        <option value="$PROJECT_DIR$/js/router.js" />
+        <option value="$PROJECT_DIR$/templates/comp-details.html" />
+        <option value="$PROJECT_DIR$/js/views/CompView.js" />
+        <option value="$PROJECT_DIR$/templates/comp-details-start.html" />
       </list>
     </option>
   </component>
@@ -160,6 +215,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -302,7 +371,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2488263" sideWeight="0.8784" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2488263" sideWeight="0.8784" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1216" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -380,21 +449,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/aths-list-item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sunday.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/comp-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="62" selection-end="62" vertical-scroll-proportion="0.06012024" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/views/SaturdaySundayView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="62" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.5588235" />
@@ -403,13 +457,6 @@
     <entry file="file://$PROJECT_DIR$/js/views/FeedListView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/CompView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="72" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.17918089">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/CreditsView.js">
@@ -422,11 +469,6 @@
         <state line="8" column="25" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="314" column="75" selection-start="11933" selection-end="11933" vertical-scroll-proportion="0.8191126" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="228" column="38" selection-start="4196" selection-end="4196" vertical-scroll-proportion="0.62286687" />
@@ -435,13 +477,6 @@
     <entry file="file://$PROJECT_DIR$/templates/structure.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/StructureView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="224" selection-end="470" vertical-scroll-proportion="0.32554257">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/feed-details.html">
@@ -459,9 +494,51 @@
         <state line="22" column="25" selection-start="538" selection-end="538" vertical-scroll-proportion="0.5509182" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/CompViewStart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/StructureView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="62" selection-start="629" selection-end="644" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/views/FeedView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="28" selection-start="791" selection-end="791" vertical-scroll-proportion="0.2654424">
+        <state line="28" column="23" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/CompView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="29" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/comp-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="58" selection-start="0" selection-end="524" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/comp-details-start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="43" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="193" column="38" selection-start="7517" selection-end="7517" vertical-scroll-proportion="0.026548672">
           <folding />
         </state>
       </provider>
