@@ -8,17 +8,15 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/comp-deta
 
 
             template: Handlebars.compile(template),
-            startingList: function (){
-                Parse.history.navigate("startingList", {trigger: true});
-            },
+
             render: function (eventName) {
                 $(this.el).html(this.template(this.model.toJSON()));
                 var tab = this.model.get("startList");
-                var htmlObject = document.createElement('div');
-                htmlObject.innerHTML = tab;
-                console.log(htmlObject.innerHTML);
-                $(htmlObject.innerHTML).appendTo(this.el);
+                $(this.el).append($(tab));
                 return this;
+            },
+            startingList: function(){
+                Parse.history.navigate("Comps/" + this.model.cid, {trigger: true});
             }
         });
         return CompView;

@@ -17,7 +17,6 @@ define(["jquery", "underscore", "parse", "handlebars", "text!templates/structure
 
         goBack: function () {
           window.history.back();
-
         },
         goAthletes: function() {
             Parse.history.navigate("athletes", {trigger: true})

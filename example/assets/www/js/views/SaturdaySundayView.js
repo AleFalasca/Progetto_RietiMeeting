@@ -5,36 +5,31 @@
  * Time: 12.14
  * To change this template use File | Settings | File Templates.
  */
-define(["jquery", "underscore", "parse", "handlebars", "views/CompListSat", "views/CompListSun", "text!templates/comp-list.html"],
-    function ($, _, Parse, Handlebars, CompListSat, CompListSun, template) {
+define(["jquery", "underscore", "parse", "handlebars", "views/SaturdayView", "views/SundayView", "text!templates/comp-list.html"],
+    function ($, _, Parse, Handlebars, SaturdayView, SundayView , template) {
 
         var CompListView = Parse.View.extend({
 
-            tagName: "ul",
+            tagName: "div",
             id: "listContainerByDay",
 
             template: Handlebars.compile(template),
 
-            initialize: function () {
-                this.model.bind("reset", this.render, this);
-            },
-
             render: function (eventName) {
-                var sat = this.model.byDay("Saturday");
-                console.log(sat);
-                var sun = this.model.byDay("Sunday");
-                console.log(sun);
                 $(this.el).empty();
-                $(this.el).append('<h2 class="day">Saturday</h2>');
-                console.log("saturday");
-                $(this.el).append(new CompListSat({
+                var sat = this.model.byDay("Saturday");
+                var sun = this.model.byDay("Sunday");
+                $(this.el).append(new SaturdayView({
                     model: sat
                 }).render().el);
-                $(this.el).append('<h2 class="day">Sunday</h2>');
-                $(this.el).append(new CompListSun({
+                $(this.el).append(new SundayView({
                     model: sun
-                }).render().el);
+                }).render().el)
                 return this;
+            },
+
+            initialize: function () {
+                this.model.bind("reset", this.render, this);
             }
         });
 

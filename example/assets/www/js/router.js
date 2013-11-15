@@ -14,8 +14,7 @@ define(["jquery", "underscore", "parse", "collections/CompCollection","collectio
        "categories": "categories",
        "credits": "credits",
        "feeds/:id": "feedDetails",
-       "start": "start"
-
+       "start/:id": "start"
       },
 
       initialize: function () {
@@ -259,7 +258,7 @@ Comp1.save();
             });
             console.log("Comps populated!");
             $.ajax({
-                url:"http://127.0.0.1:8080/RietiMeeting/meeting_data",
+                url:"http://192.168.0.101:8080/RietiMeeting/meeting_data",
                 dataType:'json',
                 success: function(res, code){
                     //console.log(res);
@@ -304,9 +303,8 @@ Comp1.save();
                         entry = new Feed({
                             title:$(v).find("title").text(),
                             link:$(v).find("link").text(),
-                            description:$.trim($(v).find("encoded").text()),
-                            fblink:"https://www.facebook.com/sharer/sharer.php?u="+this.link,
-                            twlink:"https://twitter.com/share?source=tweetbutton&url="+this.link
+                            description:$.trim($(v).find("encoded").text())
+
                         });
                         entries.push(entry);
                     });
@@ -323,25 +321,20 @@ Comp1.save();
             });
             this.changePage(page);
         },
-        athDetails: function(id){
-            var ath = this.Athletes.getByCid(id);
-            this.changePage(new AthView({
-                model: ath
-            }));
-        },
+
         feedlist: function () {
             var page = new FeedListView({
                 model: this.Feeds
             });
             this.changePage(page);
         },
-
         feedDetails: function (id) {
             var feed = this.Feeds.getByCid(id);
             this.changePage(new FeedView({
                 model: feed
             }));
         },
+
 
         satSun: function () {
             var page = new SaturdaySundayView({
@@ -356,10 +349,10 @@ Comp1.save();
           model: Comp
         }));
       },
-        start: function () {
-            var Comp = this.Comps.getByCid(id);
+        start: function(id){
+            var race = this.Comps.getByCid(id);
             this.changePage(new CompViewStart({
-                model: Comp
+                model: race
             }));
         },
 
@@ -378,6 +371,12 @@ Comp1.save();
             var page = new CreditsView({
             });
             this.changePage(page);
+        },
+        athDetails: function(id){
+            var ath = this.Athletes.getByCid(id);
+            this.changePage(new AthView({
+                model: ath
+            }));
         },
        changePage: function (page) {
         if(this.currentView) {

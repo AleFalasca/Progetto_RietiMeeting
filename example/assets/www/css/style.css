@@ -97,12 +97,10 @@ body {
 
 #saturday>li{
     display: inline-block;
-    padding-top: 50px;
     width: 30%;
 }
 #sunday>li{
     display: inline-block;
-    padding-top: 50px;
     width: 30%;
 }
 #smalltext{
@@ -213,6 +211,8 @@ margin-top: 60px;
     height: 44px;
     text-align: center;
     margin-left: 35%;
+    border: 1px solid #191919;
+    vertical-align: middle;
 }
 #Results{
     width: 70px;
@@ -223,22 +223,17 @@ margin-top: 60px;
 }
 
 #social {
-    position:absolute;
-    float: right;
-    margin-top: 13%;
-    margin-left: 50%;
-    vertical-align: top;
-    padding-left: 15px;
+    margin: 0 auto;
 }
 #social>img{
-    display:block;
-    margin-top: 15%;
-    top: 50%;
-    left: 50%;
+    margin: 0 auto;
+
+
 }
 .day{
     font-size: 2.8em;
     color: #030354;
+    /*padding-bottom: 5px;*/
 }
 /*STYLE FOR ATHLETES LIST*/
 #athsContainer{

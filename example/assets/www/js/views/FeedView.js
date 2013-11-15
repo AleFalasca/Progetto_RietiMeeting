@@ -40,9 +40,7 @@ define(["jquery", "underscore", "parse", "share", "handlebars", "text!templates/
         render: function (eventName) {
             $(this.el).html(this.template(this.model.toJSON()));
             var desc = this.model.get("description");
-            var htmlObject = document.createElement('p');
-            htmlObject.innerHTML = desc;
-            $(htmlObject.innerHTML).appendTo(this.el);
+            $(this.el).append($(desc));
             return this;
         }
       });
